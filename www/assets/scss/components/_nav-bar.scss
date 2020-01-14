@@ -1,0 +1,383 @@
+header {
+  background: $kitkat-red;
+
+  @include mobile {
+    position: relative;
+    z-index: 990;
+  }
+}
+
+.nav-head {
+  padding: 16px;
+  position: relative;
+  z-index: 990;
+
+  @include desktop {
+    position: fixed;
+    top: 0;
+    background: $kitkat-red;
+    width: 100%;
+  }
+
+  @include flexbox();
+  @include justify-content(space-between);
+
+  @include desktop {
+    box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0), 0 2px 4px -1px rgba(0, 0, 0, 0.2);
+  }
+
+  .app-header & {
+    padding: 16px 30px;
+  }
+
+  .logo {
+    position: relative;
+  }
+
+  .nav-left {
+    @include flexbox();
+
+    .menu-lg {
+      ul {
+        @include flexbox();
+        list-style: none;
+        margin: 0;
+        margin-top: 20px;
+
+        li {
+          margin-right: 35px;
+          font-family: $avenir-roman;
+          font-weight: bold;
+          font-size: 14px;
+
+          a {
+            color: #fff;
+          }
+
+          &:last-of-type {
+            margin: 0;
+          }
+        }
+      }
+    }
+  }
+
+  .nav-right {
+    // float: right;
+    margin-top: 7px;
+
+    .login {
+      margin-right: 24px;
+      cursor: pointer;
+
+      img {
+        width: 20px;
+      }
+    }
+
+    .basket {
+      margin-right: 24px;
+
+      @include desktop {
+        margin: 0;
+      }
+
+      cursor: pointer;
+      position: relative;
+
+      .basket-count {
+        position: absolute;
+        left: 0;
+        top: 0px;
+        background: #fff;
+        color: $kitkat-red;
+        height: 13px;
+        width: 18px;
+        @include flexbox();
+        @include align-items(center);
+        @include justify-content(center);
+        font-size: 12px;
+        font-weight: 500;
+
+        @include mobile {
+          height: 16px;
+          margin-top: 2px;
+        }
+      }
+    }
+
+    .ham-icon {
+      cursor: pointer;
+      color: #fff;
+    }
+  }
+
+  .username{
+    color: $white;
+    font-family: "Avenir-Roman", "Montserrat", sans-serif;
+    
+    @include desktop{
+      margin-right: 24px;
+      font-weight: bold;
+    }
+  }
+
+  @include mobile {
+    &.sticky {
+      position: fixed;
+      top: 0px;
+      width: 100%;
+      z-index: 900;
+      background: $kitkat-red;
+      transform: translate3d(0, 0, 0);
+      transition: transform .4s, background .7s;
+      animation: smoothScroll 1s backwards;
+
+      @include mobile {
+        box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0), 0 2px 4px -1px rgba(0, 0, 0, 0.2);
+      }
+    }
+  }
+}
+
+#nav-menu {
+  display: block;
+  z-index: 1;
+  -webkit-user-select: none;
+  user-select: none;
+  margin: -5px;
+
+  @include mobile {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  .icon-close {
+    position: fixed;
+    right: 16px;
+    top: 30px;
+    z-index: 999;
+    cursor: pointer;
+    color: #fff;
+
+    .app-header & {
+      right: 30px;
+    }
+  }
+
+  .logo {
+    z-index: 999;
+    position: fixed;
+    top: 16px;
+    left: 16px;
+
+    .app-header & {
+      left: 30px;
+    }
+  }
+
+  .loader {
+    margin: 0;
+  }
+}
+
+#menu {
+  position: fixed;
+  width: 100vw;
+  margin: -100px 0 0 0px;
+  padding-left: 24px;
+  padding-top: 100px;
+  background: $kitkat-red url('assets/img/angled-finger-outline-pattern.svg') no-repeat bottom right;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  z-index: 998;
+  bottom: 0;
+  top: 43px;
+  overflow-x: hidden;
+  overflow-y: hidden;
+
+  .app-header & {
+    background-size: 34%;
+  }
+
+  @include mobile {
+    width: 106%;
+    overflow-x: hidden;
+  }
+
+  a {
+    color: #fff;
+  }
+
+  h3 {
+    margin: 0;
+    margin-bottom: 16px;
+  }
+
+  .label-text {
+    margin-bottom: 16px;
+
+    label {
+      color: $grey;
+      font-weight: 300;
+      font-style: normal;
+      font-stretch: normal;
+      letter-spacing: normal;
+    }
+  }
+
+  .menu-top {
+    margin-bottom: 40px;
+    margin-top: 40px;
+  }
+
+  .menu-bottom {
+    margin-bottom: 40px;
+  }
+
+  .social-links {
+    bottom: 24px;
+    left: 0;
+    position: relative;
+
+    a span svg {
+      height: 16px;
+      width: 16px;
+    }
+
+    // Small devices (landscape phones, 576px and up)
+    @media (min-width: 576px) {
+      position: fixed;
+
+      a span {
+        font-size: 16px !important;
+      }
+
+      a span svg {
+        height: 16px;
+        width: 16px;
+      }
+
+    }
+
+    // Medium devices (tablets, 768px and up)
+    @media (min-width: 768px) {
+      position: fixed;
+
+      a span {
+        font-size: 18px !important;
+      }
+
+      a span svg {
+        height: 18px;
+        width: 18px;
+      }
+    }
+
+    // Large devices (desktops, 992px and up)
+    @media (min-width: 992px) {
+      position: fixed;
+
+      a span {
+        font-size: 20px !important;
+      }
+
+      a span svg {
+        height: 20px;
+        width: 20px;
+      }
+    }
+
+    // Extra large devices (large desktops, 1200px and up)
+    @media (min-width: 1200px) {
+      position: fixed;
+
+      a span {
+        font-size: 20px !important;
+      }
+
+      a span svg {
+        height: 20px;
+        width: 20px;
+      }
+    }
+  }
+
+  .bg-menu-wrap {
+    @include align-items(center);
+    height: 100%;
+
+    >.canvas-wrapper-cyob {
+      order: 2;
+      padding-right: 30px;
+
+      img {
+        width: 100%;
+        padding-right: 30px;
+      }
+    }
+
+    >.bg-left {
+      padding-left: 10.5%;
+    }
+  }
+}
+
+.inline-cart {
+  width: 30%;
+  position: fixed;
+  top: 74px;
+  right: 0;
+  z-index: 10;
+  background: #fff;
+  overflow-y: auto;
+  max-height: 90vh;
+
+  @include desktop {
+    box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14),
+      0 1px 10px 0 rgba(0, 0, 0, 0),
+      0 2px 17px -1px rgba(0, 0, 0, 0.2);
+  }
+
+  @include mobile {
+    width: 100%;
+    top: 0;
+    height: 100vh;
+    max-height: unset;
+    z-index: 1000;
+  }
+
+  .basket {
+    overflow-y: auto;
+    &.no-scroll{
+      overflow: hidden !important;
+    }
+    .header {
+      position: fixed;
+      top: 73px;
+      right: 0;
+      width: 30%;
+      z-index: 11;
+
+      @include mobile {
+        position: unset;
+        width: 100%;
+      }
+    }
+
+    .details-wrapper {
+      @include desktop {
+        margin-top: 76px;
+        //margin-bottom: 120px;
+      }
+    }
+
+    .amount-wrapper {
+      @include desktop {
+        // position: fixed;
+        // bottom: 0;
+        // width: 30%;
+      }
+    }
+  }
+}

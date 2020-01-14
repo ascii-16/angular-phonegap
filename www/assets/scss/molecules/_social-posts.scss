@@ -1,0 +1,113 @@
+.social-posts {
+  background: #fff;
+  position: relative;
+
+  .social-posts-header {
+    background: #fff;
+    text-align: center;
+    margin-top: 40px;
+
+    .title {
+      color: $kitkat-red;
+      margin: 0;
+      margin-bottom: 8px;
+    }
+
+    .hash-tag {
+      color: $dark-grey;
+      font-size: 36px;
+    }
+
+    >div {
+      @include mobile {
+        // margin-top: 18px;
+      }
+    }
+  }
+
+  .image-wrapper {
+    margin-bottom: 40px;
+    margin-top: 32px;
+
+    img {
+      max-width: 100%;
+
+      @include mobile {
+        width: calc(100vw/2);
+        height: calc(100vw/2.1);
+      }
+
+      @include desktop {
+        height: 250px;
+      }
+    }
+
+    [class^='col-'] {
+      padding-right: 2px;
+      padding-left: 2px;
+    }
+  }
+
+  .conversation-wrapper {
+    display: flex;
+    display: -webkit-flex;
+    justify-content: center;
+    -webkit-justify-content: center;
+    align-items: center;
+    -webkit-align-items: center;
+
+    h3 {
+      @extend h1;
+    }
+
+    label {
+      margin-top: 36px;
+      margin-left: 10px;
+    }
+  }
+
+  .bg-container {
+    width: 100%;
+    max-width: calc(100% - 60px);
+    margin: auto;
+
+    .col-lg-3 {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+
+    .userdetails {
+      display: flex;
+      display: -webkit-flex;
+      align-items: center;
+      -webkit-align-items: center;
+      margin-top: 20px;
+
+      .profile-pic {
+        //item css until api integration
+        width: 50px;
+        height: 50px;
+        border-radius: 100%;
+        border: 2px solid $kitkat-red;
+        background-clip: padding-box;
+        line-height: 50px;
+        text-align: center;
+        background-size: cover !important;
+        @extend h5;
+
+        background: #8F8F8F;
+        color: $kitkat-red;
+        -webkit-text-fill-color: $white;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: $kitkat-red;
+
+      }
+
+      .name {
+        @extend h6;
+        color: $kitkat-red;
+        margin-left: 10px;
+      }
+    }
+  }
+}

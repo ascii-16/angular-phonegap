@@ -1,0 +1,63 @@
+.dialogue-overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  //transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 1000;
+}
+
+.dialogue-show {
+  visibility: visible;
+  opacity: 1;
+
+  .dialogue-popup {
+    margin: 70px auto;
+    padding: 20px;
+    background: #fff;
+    width: 30%;
+    position: relative;
+    //transition: all 5s ease-in-out;
+  }
+
+  .dialogue-popup h3 {
+    margin-top: 0;
+    color: $kitkat-red;
+    margin-bottom: 10px;
+    font-size: inherit;
+    @extend h3;
+  }
+
+  .icon-close {
+    color: $kitkat-red;
+    cursor: pointer;
+    pointer-events: all;
+    position: absolute;
+    top: 22px;
+    right: 16px;
+  }
+
+  .dialogue-popup .content {
+    max-height: 30%;
+    overflow: auto;
+  }
+
+  .button-box {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  @media screen and (max-width: 700px) {
+    .dialogue-box {
+      width: 70%;
+    }
+
+    .dialogue-popup {
+      width: 70%;
+    }
+  }
+}

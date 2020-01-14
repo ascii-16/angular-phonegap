@@ -1,0 +1,78 @@
+.line-item {
+
+  .icon-Add,
+  .icon-Minus {
+    font-size: 24px !important;
+
+    &:hover {
+      color: $kitkat-red !important;
+    }
+  }
+
+  .details {
+    @include desktop {
+      padding-left: 16px;
+    }
+    .list-wrapper{
+      margin-bottom: 8px;
+      .item{
+        font-family: 'Avenir-Black';
+      }
+      .message-text{
+        display: block;
+      }
+    }
+    .b2 {
+      margin: 0;
+      margin-bottom: 8px;
+    }
+
+    .price {
+      @extend h5;
+      margin-bottom: 8px;
+    }
+
+    .edit-option {
+      margin-bottom: 8px;
+
+      a {
+        @extend h6;
+        color: $kitkat-red;
+      }
+    }
+
+    .quanity-selector {
+      @include flexbox();
+
+      .icon-Add,
+      .icon-Minus {
+        color: $dark-grey;
+
+        &:hover {
+          color: #c1c1c1;
+        }
+      }
+
+      .value {
+        @extend h4;
+        margin: 0 16px;
+      }
+
+      .remove-link {
+        @extend h6;
+        color: $kitkat-red;
+        margin-left: 16px;
+        cursor: pointer;
+      }
+    }
+
+    .btn-text {
+      text-align: left;
+      width: auto !important;
+
+      &:hover {
+        margin-bottom: -2px;
+      }
+    }
+  }
+}

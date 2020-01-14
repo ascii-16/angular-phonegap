@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   id="svg20"
+   version="1.1"
+   viewBox="0 0 50 50"
+   height="50"
+   width="50">
+  <metadata
+     id="metadata24">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs4">
+    <style
+       id="style2">
+            .cls-1{fill:none;stroke:#c40018;stroke-miterlimit:10;stroke-width:2px}.cls-2{fill:#c40018}
+        </style>
+  </defs>
+  <g
+     transform="rotate(90,24,25)"
+     data-name="Group 10 Copy"
+     id="Group_10_Copy">
+    <g
+       data-name="Group 19 Copy"
+       id="Group_19_Copy">
+      <path
+         style="fill:none;stroke:#c40018;stroke-width:2px;stroke-miterlimit:10"
+         data-name="Rectangle Copy 15"
+         class="cls-1"
+         d="M 0,0 H 8 V 48 H 0 Z"
+         id="Rectangle_Copy_15" />
+      <path
+         style="fill:none;stroke:#c40018;stroke-width:2px;stroke-miterlimit:10"
+         transform="translate(8)"
+         data-name="Rectangle Copy 50"
+         class="cls-1"
+         d="M 0,0 H 8 V 48 H 0 Z"
+         id="Rectangle_Copy_50" />
+      <path
+         style="fill:none;stroke:#c40018;stroke-width:2px;stroke-miterlimit:10"
+         transform="translate(16)"
+         data-name="Rectangle Copy 51"
+         class="cls-1"
+         d="M 0,0 H 8 V 48 H 0 Z"
+         id="Rectangle_Copy_51" />
+      <path
+         style="fill:none;stroke:#c40018;stroke-width:2px;stroke-miterlimit:10"
+         transform="translate(24)"
+         data-name="Rectangle Copy 52"
+         class="cls-1"
+         d="M 0,0 H 8 V 48 H 0 Z"
+         id="Rectangle_Copy_52" />
+      <path
+         style="fill:none;stroke:#c40018;stroke-width:2px;stroke-miterlimit:10"
+         transform="translate(32)"
+         data-name="Rectangle Copy 53"
+         class="cls-1"
+         d="M 0,0 H 8 V 48 H 0 Z"
+         id="Rectangle_Copy_53" />
+      <path
+         style="fill:none;stroke:#c40018;stroke-width:2px;stroke-miterlimit:10"
+         transform="translate(40)"
+         data-name="Rectangle Copy 54"
+         class="cls-1"
+         d="M 0,0 H 8 V 48 H 0 Z"
+         id="Rectangle_Copy_54" />
+    </g>
+    <path
+       style="fill:#c40018"
+       transform="translate(2,2)"
+       data-name="Rectangle Copy 72"
+       class="cls-2"
+       d="M 0,0 H 4 V 44 H 0 Z"
+       id="Rectangle_Copy_72" />
+    <path
+       style="fill:#c40018"
+       transform="translate(10,2)"
+       data-name="Rectangle Copy 73"
+       class="cls-2"
+       d="M 0,0 H 4 V 44 H 0 Z"
+       id="Rectangle_Copy_73" />
+    <path
+       style="fill:#c40018"
+       transform="translate(18,2)"
+       data-name="Rectangle Copy 74"
+       class="cls-2"
+       d="M 0,0 H 4 V 44 H 0 Z"
+       id="Rectangle_Copy_74" />
+    <path
+       style="fill:#c40018"
+       transform="translate(26,2)"
+       data-name="Rectangle Copy 75"
+       class="cls-2"
+       d="M 0,0 H 4 V 44 H 0 Z"
+       id="Rectangle_Copy_75" />
+    <path
+       style="fill:#c40018"
+       transform="translate(34,2)"
+       data-name="Rectangle Copy 76"
+       class="cls-2"
+       d="M 0,0 H 4 V 44 H 0 Z"
+       id="Rectangle_Copy_76" />
+    <path
+       style="fill:#c40018"
+       transform="translate(42,2)"
+       data-name="Rectangle Copy 77"
+       class="cls-2"
+       d="M 0,0 H 4 V 44 H 0 Z"
+       id="Rectangle_Copy_77" />
+  </g>
+</svg>

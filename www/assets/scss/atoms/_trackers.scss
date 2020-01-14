@@ -1,0 +1,25 @@
+.progress-meter {
+  @include desktop {
+    text-align: center;
+  }
+
+  &.light-bg {
+    color: $kitkat-red;
+  }
+
+  &.dark-bg {
+    color: $white;
+
+    .icon-Trapezoid-empty:before {
+      color: $dark-red;
+    }
+  }
+
+  >span {
+    margin-right: 8px;
+
+    &:last-of-type {
+      margin: 0;
+    }
+  }
+}

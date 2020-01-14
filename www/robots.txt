@@ -1,0 +1,4 @@
+Sitemap: https://stag.kitkatchocolatory.co.uk/sitemap.xml
+
+User-agent: *
+Disallow: /

@@ -1,0 +1,54 @@
+.login-page,
+.sign-up {
+  margin: 0 16px;
+  padding: 30px 0;
+
+  @include desktop {
+    margin: 0 auto;
+    width: 40%;
+  }
+
+  .title {
+    margin-bottom: 10px;
+    @extend h3;
+  }
+
+  .checkbox {
+    margin-bottom: 8px;
+    margin-top: 10px;
+
+    span:first-of-type {
+      margin-right: 5px;
+      cursor: pointer;
+    }
+
+    .icon-checkbox-active {
+      color: $kitkat-red;
+    }
+  }
+
+  .submit {
+    margin-top: 10px;
+  }
+
+  .sign-up-link,
+  .forgot-passwordlink {
+    padding-top: 8px;
+
+    @include mobile {
+      text-align: center;
+    }
+  }
+
+  @media (min-width: 576px) {
+    .forgot-passwordlink {
+      text-align: right;
+    }
+  }
+}
+.login-page{
+  &.main-wrapper{
+    min-height: 400px;
+    height:50vh;
+  }
+}

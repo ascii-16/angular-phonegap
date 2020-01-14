@@ -1,0 +1,22 @@
+.social-links {
+  color: #fff;
+  width: 100%;
+  text-align: center;
+
+  a {
+    margin-right: 40px;
+    color: $white !important;
+
+    &:last-of-type {
+      margin: 0;
+    }
+
+    &:hover {
+      text-decoration: none;
+    }
+
+    svg path {
+      fill: $white;
+    }
+  }
+}

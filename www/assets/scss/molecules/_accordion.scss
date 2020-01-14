@@ -1,0 +1,134 @@
+.accordion {
+  .accordion-group {
+    .panel {
+      border-top: 2px solid rgba(255, 255, 255, 0.7);
+      padding-top: 8px;
+      padding-bottom: 24px;
+
+      // .panel-heading {
+      //     // padding-top: 8px;
+      //     // padding-bottom: 24px;
+      // }
+      .panel-title {
+        position: relative;
+        font-size: 14px;
+        line-height: 17px;
+        margin: 0;
+        cursor: pointer;
+
+        &:after {
+          content: "\e90c";
+          font-family: 'icomoon';
+          position: absolute;
+          right: 0;
+          top: 0;
+        }
+      }
+
+      .accordion-text {
+        font-family: $avenir-roman;
+        font-size: 14px;
+        margin-top: 16px;
+      }
+    }
+
+    .dropup {
+      .panel-title:after {
+        content: "\e90f" !important;
+      }
+
+      .panel-heading {
+        padding-bottom: 0;
+      }
+    }
+  }
+}
+
+.accordion-light {
+  @extend .accordion;
+
+  .panel {
+    border-top: 2px solid $light-grey !important;
+
+    .panel-title {
+      color: $black;
+
+      &:after {
+        color: $kitkat-red;
+      }
+    }
+
+    .panel-body {
+      .caution {
+        color: $dark-red;
+        margin-top: 24px;
+        margin-bottom: 16px;
+
+        &.nutrition {
+          margin-top: 16px;
+          margin-bottom: 0;
+        }
+      }
+
+      .nutrition-info {
+        @media (max-width: 390px) {
+          overflow-x: scroll;
+        }
+      }
+
+      table.nutrition-info {
+        width: 100%;
+        border-collapse: collapse;
+        table-layout: fixed;
+
+        thead {
+          th {
+            text-align: left;
+            padding: 8px 16px;
+            font-size: 14px;
+
+            &:first-child {
+              width: 38%;
+              padding: 0;
+              padding-left: 16px;
+            }
+          }
+        }
+
+        tbody {
+          td {
+            text-align: left;
+            padding: 8px 16px;
+            word-break: break-all;
+
+            &:first-child {
+              width: 38%;
+              padding: 0;
+              padding-left: 16px;
+            }
+          }
+        }
+
+        .even {
+          background: $light-grey;
+        }
+
+        .title {
+          h5 {
+            margin: 0;
+          }
+        }
+      }
+    }
+  }
+
+  .dropup {
+    .panel-title {
+      color: $kitkat-red !important;
+    }
+
+    .panel-heading {
+      padding-bottom: 24px;
+    }
+  }
+}

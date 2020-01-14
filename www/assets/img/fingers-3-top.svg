@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   height="254.77475"
+   width="301.58777"
+   id="svg57"
+   version="1.1"
+   viewBox="0 0 301.58778 254.77475">
+  <metadata
+     id="metadata61">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title>Asset 1</dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs7">
+    <style
+       id="style2">.cls-1,.cls-3{fill:none;}.cls-2{clip-path:url(#clip-path);}.cls-3{stroke:#951a26;stroke-miterlimit:10;}</style>
+    <clipPath
+       transform="translate(-18.19)"
+       id="clip-path">
+      <rect
+         style="fill:none"
+         x="0"
+         id="rect4"
+         height="277.14999"
+         width="345.59"
+         y="354.97"
+         class="cls-1" />
+    </clipPath>
+  </defs>
+  <title
+     id="title9">Asset 1</title>
+  <g
+     transform="translate(-0.00221641,-354.97)"
+     data-name="Layer 2"
+     id="Layer_2">
+    <g
+       id="kitkat">
+      <g
+         id="g53"
+         clip-path="url(#clip-path)"
+         class="cls-2">
+        <polygon
+           style="fill:none;stroke:#951a26;stroke-miterlimit:10"
+           id="polygon11"
+           points="315.5,89.26 34.23,479.07 82.15,522.28 363.42,132.47 "
+           class="cls-3" />
+        <polygon
+           style="fill:none;stroke:#951a26;stroke-miterlimit:10"
+           id="polygon13"
+           points="316.52,100.5 353.38,133.74 81.13,511.04 44.27,477.8 "
+           class="cls-3" />
+        <polygon
+           style="fill:none;stroke:#951a26;stroke-miterlimit:10"
+           id="polygon15"
+           points="317.54,111.74 343.33,135 80.11,499.8 54.31,476.53 "
+           class="cls-3" />
+        <line
+           style="fill:none;stroke:#951a26;stroke-miterlimit:10"
+           id="line17"
+           y2="499.79999"
+           x2="80.110001"
+           y1="511.04001"
+           x1="81.129997"
+           class="cls-3" />
+        <line
+           style="fill:none;stroke:#951a26;stroke-miterlimit:10"
+           id="line19"
+           y2="477.79999"
+           x2="44.27"
+           y1="476.53"
+           x1="54.310001"
+           class="cls-3" />
+        <line
+           style="fill:none;stroke:#951a26;stroke-miterlimit:10"
+           id="line21"
+           y2="133.74001"
+           x2="353.38"
+           y1="135.00999"
+           x1="343.32999"
+           class="cls-3" />
+        <line
+           style="fill:none;stroke:#951a26;stroke-miterlimit:10"
+           id="line23"
+           y2="100.5"
+           x2="316.51999"
+           y1="111.74"
+           x1="317.54001"
+           class="cls-3" />
+        <polygon
+           style="fill:none;stroke:#951a26;stroke-miterlimit:10"
+           id="polygon25"
+           points="350.88,175.98 69.61,565.79 117.52,609 398.79,219.19 "
+           class="cls-3" />
+        <polygon
+           style="fill:none;stroke:#951a26;stroke-miterlimit:10"
+           id="polygon27"
+           points="351.89,187.22 388.75,220.46 116.5,597.76 79.65,564.52 "
+           class="cls-3" />
+        <polygon
+           style="fill:none;stroke:#951a26;stroke-miterlimit:10"
+           id="polygon29"
+           points="352.91,198.46 378.71,221.72 115.49,586.52 89.69,563.25 "
+           class="cls-3" />
+        <line
+           style="fill:none;stroke:#951a26;stroke-miterlimit:10"
+           id="line31"
+           y2="586.52002"
+           x2="115.49"
+           y1="597.76001"
+           x1="116.5"
+           class="cls-3" />
+        <line
+           style="fill:none;stroke:#951a26;stroke-miterlimit:10"
+           id="line33"
+           y2="564.52002"
+           x2="79.650002"
+           y1="563.25"
+           x1="89.690002"
+           class="cls-3" />
+        <line
+           style="fill:none;stroke:#951a26;stroke-miterlimit:10"
+           id="line35"
+           y2="220.46001"
+           x2="388.75"
+           y1="221.72"
+           x1="378.70999"
+           class="cls-3" />
+        <line
+           style="fill:none;stroke:#951a26;stroke-miterlimit:10"
+           id="line37"
+           y2="187.22"
+           x2="351.89001"
+           y1="198.46001"
+           x1="352.91"
+           class="cls-3" />
+        <polygon
+           style="fill:none;stroke:#951a26;stroke-miterlimit:10"
+           id="polygon39"
+           points="281.94,0.74 0.67,390.55 48.58,433.77 329.85,43.96 "
+           class="cls-3" />
+        <polygon
+           style="fill:none;stroke:#951a26;stroke-miterlimit:10"
+           id="polygon41"
+           points="282.95,11.98 319.81,45.22 47.56,422.53 10.71,389.29 "
+           class="cls-3" />
+        <polygon
+           style="fill:none;stroke:#951a26;stroke-miterlimit:10"
+           id="polygon43"
+           points="283.97,23.22 309.77,46.49 46.55,411.29 20.75,388.02 "
+           class="cls-3" />
+        <line
+           style="fill:none;stroke:#951a26;stroke-miterlimit:10"
+           id="line45"
+           y2="411.29001"
+           x2="46.549999"
+           y1="422.53"
+           x1="47.57"
+           class="cls-3" />
+        <line
+           style="fill:none;stroke:#951a26;stroke-miterlimit:10"
+           id="line47"
+           y2="389.29001"
+           x2="10.71"
+           y1="388.01999"
+           x1="20.75"
+           class="cls-3" />
+        <line
+           style="fill:none;stroke:#951a26;stroke-miterlimit:10"
+           id="line49"
+           y2="45.220001"
+           x2="319.81"
+           y1="46.490002"
+           x1="309.76999"
+           class="cls-3" />
+        <line
+           style="fill:none;stroke:#951a26;stroke-miterlimit:10"
+           id="line51"
+           y2="11.98"
+           x2="282.95001"
+           y1="23.219999"
+           x1="283.97"
+           class="cls-3" />
+      </g>
+    </g>
+  </g>
+</svg>

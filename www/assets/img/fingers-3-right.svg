@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   viewBox="0 0 520.46971 360.68698"
+   version="1.1"
+   id="svg71"
+   sodipodi:docname="fingers-3-right.svg"
+   width="520.46973"
+   height="360.68698"
+   inkscape:version="0.92.4 (33fec40, 2019-01-16)">
+  <metadata
+     id="metadata75">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1325"
+     inkscape:window-height="744"
+     id="namedview73"
+     showgrid="false"
+     inkscape:zoom="1.3994171"
+     inkscape:cx="301.2281"
+     inkscape:cy="204.09606"
+     inkscape:window-x="41"
+     inkscape:window-y="24"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg71" />
+  <defs
+     id="defs7">
+    <style
+       id="style2">.cls-1,.cls-3{fill:none;}.cls-2{clip-path:url(#clip-path);}.cls-3{stroke:#951a26;stroke-miterlimit:10;}</style>
+    <clipPath
+       id="clip-path"
+       transform="translate(-78.24 -8.74)">
+      <polyline
+         class="cls-1"
+         points="520.05 0 520.47 427.99 87.65 402.49 0 293.25 78.75 98.59 214.49 42.51 520.05 0"
+         id="polyline4"
+         style="fill:none" />
+    </clipPath>
+  </defs>
+  <title
+     id="title9">Asset 2</title>
+  <g
+     id="Layer_2"
+     data-name="Layer 2"
+     transform="translate(-2.532887e-4,-0.00150606)">
+    <g
+       id="kitkat">
+      <g
+         class="cls-2"
+         clip-path="url(#clip-path)"
+         id="g67">
+        <polygon
+           class="cls-3"
+           points="188.06,200.19 664.64,137.46 663.22,72.95 186.64,135.69 "
+           id="polygon11"
+           style="fill:none;stroke:#951a26;stroke-miterlimit:10" />
+        <polygon
+           class="cls-3"
+           points="195.55,191.74 194.45,142.12 655.74,81.41 656.84,131.02 "
+           id="polygon13"
+           style="fill:none;stroke:#951a26;stroke-miterlimit:10" />
+        <polygon
+           class="cls-3"
+           points="203.03,183.29 202.26,148.56 648.26,89.85 649.02,124.59 "
+           id="polygon15"
+           style="fill:none;stroke:#951a26;stroke-miterlimit:10" />
+        <line
+           class="cls-3"
+           x1="195.55"
+           y1="191.74001"
+           x2="203.03"
+           y2="183.28999"
+           id="line17"
+           style="fill:none;stroke:#951a26;stroke-miterlimit:10" />
+        <line
+           class="cls-3"
+           x1="202.25999"
+           y1="148.56"
+           x2="194.45"
+           y2="142.12"
+           id="line19"
+           style="fill:none;stroke:#951a26;stroke-miterlimit:10" />
+        <line
+           class="cls-3"
+           x1="649.02002"
+           y1="124.59"
+           x2="656.83002"
+           y2="131.02"
+           id="line21"
+           style="fill:none;stroke:#951a26;stroke-miterlimit:10" />
+        <line
+           class="cls-3"
+           x1="648.26001"
+           y1="89.849998"
+           x2="655.73999"
+           y2="81.400002"
+           id="line23"
+           style="fill:none;stroke:#951a26;stroke-miterlimit:10" />
+        <polygon
+           class="cls-3"
+           points="1.93,309.17 478.51,246.44 477.09,181.94 0.51,244.67 "
+           id="polygon25"
+           style="fill:none;stroke:#951a26;stroke-miterlimit:10" />
+        <polygon
+           class="cls-3"
+           points="9.42,300.72 8.32,251.1 469.61,190.39 470.7,240 "
+           id="polygon27"
+           style="fill:none;stroke:#951a26;stroke-miterlimit:10" />
+        <polygon
+           class="cls-3"
+           points="16.9,292.27 16.13,257.54 462.13,198.84 462.89,233.57 "
+           id="polygon29"
+           style="fill:none;stroke:#951a26;stroke-miterlimit:10" />
+        <line
+           class="cls-3"
+           x1="9.4200001"
+           y1="300.72"
+           x2="16.9"
+           y2="292.26999"
+           id="line31"
+           style="fill:none;stroke:#951a26;stroke-miterlimit:10" />
+        <line
+           class="cls-3"
+           x1="16.129999"
+           y1="257.54001"
+           x2="8.3199997"
+           y2="251.11"
+           id="line33"
+           style="fill:none;stroke:#951a26;stroke-miterlimit:10" />
+        <line
+           class="cls-3"
+           x1="462.89001"
+           y1="233.57001"
+           x2="470.70999"
+           y2="240.00999"
+           id="line35"
+           style="fill:none;stroke:#951a26;stroke-miterlimit:10" />
+        <line
+           class="cls-3"
+           x1="462.13"
+           y1="198.84"
+           x2="469.60999"
+           y2="190.39"
+           id="line37"
+           style="fill:none;stroke:#951a26;stroke-miterlimit:10" />
+        <polygon
+           class="cls-3"
+           points="97.61,127.81 574.19,65.07 572.77,0.57 96.19,63.3 "
+           id="polygon39"
+           style="fill:none;stroke:#951a26;stroke-miterlimit:10" />
+        <polygon
+           class="cls-3"
+           points="105.09,119.36 104,69.74 565.29,9.02 566.38,58.64 "
+           id="polygon41"
+           style="fill:none;stroke:#951a26;stroke-miterlimit:10" />
+        <polygon
+           class="cls-3"
+           points="112.58,110.91 111.81,76.17 557.81,17.47 558.57,52.2 "
+           id="polygon43"
+           style="fill:none;stroke:#951a26;stroke-miterlimit:10" />
+        <line
+           class="cls-3"
+           x1="105.09"
+           y1="119.36"
+           x2="112.58"
+           y2="110.91"
+           id="line45"
+           style="fill:none;stroke:#951a26;stroke-miterlimit:10" />
+        <line
+           class="cls-3"
+           x1="111.81"
+           y1="76.169998"
+           x2="104"
+           y2="69.739998"
+           id="line47"
+           style="fill:none;stroke:#951a26;stroke-miterlimit:10" />
+        <line
+           class="cls-3"
+           x1="558.57001"
+           y1="52.200001"
+           x2="566.38"
+           y2="58.639999"
+           id="line49"
+           style="fill:none;stroke:#951a26;stroke-miterlimit:10" />
+        <line
+           class="cls-3"
+           x1="557.81"
+           y1="17.469999"
+           x2="565.28998"
+           y2="9.0200005"
+           id="line51"
+           style="fill:none;stroke:#951a26;stroke-miterlimit:10" />
+        <polygon
+           class="cls-3"
+           points="240.94,360.12 717.52,297.39 716.09,232.88 239.51,295.61 "
+           id="polygon53"
+           style="fill:none;stroke:#951a26;stroke-miterlimit:10" />
+        <polygon
+           class="cls-3"
+           points="248.42,351.67 247.32,302.05 708.61,241.33 709.71,290.95 "
+           id="polygon55"
+           style="fill:none;stroke:#951a26;stroke-miterlimit:10" />
+        <polygon
+           class="cls-3"
+           points="255.9,343.22 255.13,308.49 701.13,249.78 701.9,284.51 "
+           id="polygon57"
+           style="fill:none;stroke:#951a26;stroke-miterlimit:10" />
+        <line
+           class="cls-3"
+           x1="248.42"
+           y1="351.67001"
+           x2="255.89999"
+           y2="343.22"
+           id="line59"
+           style="fill:none;stroke:#951a26;stroke-miterlimit:10" />
+        <line
+           class="cls-3"
+           x1="255.13"
+           y1="308.48999"
+           x2="247.32001"
+           y2="302.04999"
+           id="line61"
+           style="fill:none;stroke:#951a26;stroke-miterlimit:10" />
+        <line
+           class="cls-3"
+           x1="701.90002"
+           y1="284.51001"
+           x2="709.71002"
+           y2="290.95001"
+           id="line63"
+           style="fill:none;stroke:#951a26;stroke-miterlimit:10" />
+        <line
+           class="cls-3"
+           x1="701.13"
+           y1="249.78"
+           x2="708.60999"
+           y2="241.33"
+           id="line65"
+           style="fill:none;stroke:#951a26;stroke-miterlimit:10" />
+      </g>
+    </g>
+  </g>
+</svg>

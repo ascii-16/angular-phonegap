@@ -1,0 +1,114 @@
+footer {
+  background: $kitkat-red;
+  @include desktop{
+      background-image: url('assets/img/fingers-3-bottom.svg');
+      background-repeat: no-repeat;
+      background-position: right bottom;
+      background-position-x: calc(100% + 40px);
+      background-position-y: calc(100% + 40px);
+  }
+  color: $white;
+  padding: 40px 16px;
+  .social-links {
+      margin-bottom: 40px;
+      margin-top: 16px;
+      a span svg{
+          height: 16px;
+          width: 16px;
+      }
+
+      // Small devices (landscape phones, 576px and up)
+      @media (min-width: 576px) {
+          a span{
+            font-size: 16px !important;
+          }
+          a span svg{
+              height: 16px;
+              width: 16px;
+          }
+
+      }
+
+      // Medium devices (tablets, 768px and up)
+      @media (min-width: 768px) {
+          a span{
+           font-size: 18px !important;
+          }
+          a span svg{
+              height: 18px;
+              width: 18px;
+          }
+      }
+
+      // Large devices (desktops, 992px and up)
+      @media (min-width: 992px) {
+          a span{
+           font-size: 20px !important;
+          }
+          a span svg{
+              height: 20px;
+              width: 20px;
+          }
+      }
+
+      // Extra large devices (large desktops, 1200px and up)
+      @media (min-width: 1200px) {
+          a span{
+            font-size: 20px !important;
+          }
+          a span svg{
+            height: 20px;
+            width: 20px;
+          }
+      }
+  }
+  .copyright-text {
+      font-family: $avenir-roman;
+      font-size: 14px;
+      text-align: center;
+  }
+  .accordion {
+      a {
+          color: $white;
+      }
+  }
+  a {
+      color: $white;
+      &:visited {
+          color: rgba(255,255,255,0.9)
+      }
+  }
+  .heading {
+      border-top: 2px solid rgba(255, 255, 255, 0.7);
+      padding-top: 10px;
+
+      &+ul {
+          padding-left: 0;
+          list-style: none;
+          margin-bottom: 30px;
+          a {
+              color: $white;
+              li {
+                  margin-bottom: 10px;
+              }
+          }
+      }
+
+      sup {
+          display: inline-block;
+          text-decoration: none;
+          font-size: 14px;
+          vertical-align: top;
+          position: relative;
+          top: -0.5em;
+      }
+
+      @include mobile {
+          font-size: 14px;
+          line-height: 17px;
+          margin: 0;
+          padding-top: 8px;
+          padding-bottom: 24px;
+      }
+  }
+}

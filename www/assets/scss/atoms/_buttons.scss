@@ -1,0 +1,107 @@
+.btn {
+  height: 44px;
+  padding: 0 24px;
+  font-family: $avenir-black;
+  border: 0;
+  cursor: pointer;
+  font-size: 14px;
+  box-sizing: border-box;
+  display: inline-block;
+
+  @include mobile {
+    width: 100%;
+  }
+
+  &-primary {
+    background: $kitkat-red;
+    color: $white;
+
+    &:hover {
+      background: $dark-red;
+    }
+
+    &-dark-bg {
+      background: $white;
+      color: $kitkat-red;
+
+      &:hover {
+        background: $dark-red;
+        color: $white;
+      }
+    }
+
+    &-floating {
+      background: $white;
+      color: $kitkat-red;
+      box-shadow: 0 8px 10px 0 rgba(134, 23, 35, 0.5);
+      position: fixed;
+      bottom: 16px;
+      left: 16px;
+      right: 16px;
+      width: 93%;
+      z-index: 20;
+    }
+  }
+
+  &-secondary {
+    background: transparent;
+    border: 2px solid $kitkat-red;
+    color: $kitkat-red;
+
+    &:hover {
+      background: $kitkat-red;
+      color: $white;
+    }
+
+    &-dark-bg {
+      background: transparent;
+      border: 2px solid $white;
+      color: $white;
+
+      &:hover {
+        background: $white;
+        color: $kitkat-red;
+      }
+    }
+  }
+
+  &-text {
+    background: transparent;
+    color: $kitkat-red;
+    padding: 0;
+    padding-bottom: 4px;
+    height: auto;
+
+    &:hover {
+      color: $dark-red;
+      border-bottom: 2px solid $dark-red;
+      margin-bottom: -2px;
+    }
+
+    &-dark-bg {
+      background: transparent;
+      color: $white;
+      padding: 0;
+      padding-bottom: 4px;
+      height: unset;
+
+      &:hover {
+        color: $white;
+        border-bottom: 2px solid $white;
+      }
+    }
+  }
+
+  &-primary-disabled {
+    color: $white;
+    background: $grey;
+    cursor: not-allowed;
+  }
+
+  &-disabled {
+    color: $dark-red;
+    background: transparent;
+    border: 2px solid $dark-red;
+    cursor: not-allowed;
+  }
+}

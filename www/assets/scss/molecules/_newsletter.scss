@@ -1,0 +1,91 @@
+.subscription {
+  background: $kitkat-red;
+  color: $white;
+  padding: 40px 16px;
+
+  h3 {
+    @include desktop {
+      text-align: center;
+    }
+
+    @include mobile {
+      margin-top: 40px;
+    }
+
+    margin-bottom: 16px;
+  }
+
+  .b2 {
+    @include desktop {
+      text-align: center;
+    }
+
+    &.text-area {
+      @include mobile {
+        margin-bottom: 24px;
+      }
+    }
+  }
+
+  .input-field-dark {
+    padding-top: 32px;
+  }
+
+  .checkbox {
+    margin: 24px 0;
+
+    @include mobile {
+      @include flexbox();
+    }
+
+    @include desktop {
+      margin-bottom: 0;
+      // margin-top: 15px;
+    }
+
+    .not-checked {
+      color: $dark-red;
+    }
+
+    .b2.label {
+      font-size: 15px;
+      margin-right: 16px;
+
+      a {
+        color: $white;
+        font-weight: 600;
+      }
+    }
+  }
+
+  // .submit {
+  //     margin-bottom: 40px;
+  //     @include desktop {
+  //         display: inline;
+  //     }
+  // }
+  .form-bottom {
+    @include desktop() {
+      @include align-items(center);
+      @include flexbox();
+      margin: 24px 0;
+
+      .checkbox {
+        margin: 0;
+      }
+    }
+  }
+
+  .submit-wrapper {
+    text-align: center;
+
+    .submit {
+      margin-bottom: 40px;
+
+      @include desktop {
+        display: inline;
+
+      }
+    }
+  }
+}

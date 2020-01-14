@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="Atoms_Brand_Dynamic_K_Short_Bottom" width="375" height="80" data-name="Atoms/Brand/Dynamic K/Short Bottom" viewBox="0 0 375 80">
+    <defs>
+        <style>
+            .cls-1{fill:none}.cls-2{clip-path:url(#clip-path)}.cls-3{fill:#c40018}
+        </style>
+        <clipPath id="clip-path">
+            <path id="Mask" d="M0 0h375v80H0z" class="cls-1" transform="rotate(-180 187.5 0)"/>
+        </clipPath>
+    </defs>
+    <g id="Dynamic_K_Short_Bottom" data-name="Dynamic K/Short Bottom" transform="rotate(180 187.5 0)">
+        <path id="Mask-2" d="M0 0h375v80H0z" class="cls-1" data-name="Mask" transform="rotate(-180 187.5 0)"/>
+        <g id="Dynamic_K_Short_Bottom-2" class="cls-2" data-name="Dynamic K/Short Bottom">
+            <path id="Fill_3_Copy" d="M0 0v1788.5h-1785.745l766.3-1054.544L-1364.466 0z" class="cls-3" data-name="Fill 3 Copy" transform="rotate(101 -170.173 815.798)"/>
+        </g>
+    </g>
+</svg>

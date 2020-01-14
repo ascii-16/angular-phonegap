@@ -1,0 +1,38 @@
+.alert {
+  color: $white;
+  position: relative;
+  padding: 16px;
+  margin: 16px 0;
+  font-family: $avenir-roman;
+  font-size: 17px;
+  line-height: 1.41;
+  width: 100%;
+  @include flexbox();
+  justify-content: space-between;
+
+  @include mobile {
+    font-size: 14px;
+    line-height: 1.36;
+  }
+
+  span:first-child {
+    width: 95%;
+  }
+
+  &.dark-red {
+    background: $dark-red;
+  }
+
+  &.white {
+    background: $white;
+    color: $kitkat-red !important;
+  }
+
+  &.kitkat-red {
+    background: $kitkat-red;
+  }
+
+  &.black {
+    background: $black;
+  }
+}

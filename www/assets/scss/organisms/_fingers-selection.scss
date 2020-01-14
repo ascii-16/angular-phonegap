@@ -1,0 +1,418 @@
+.fingers {
+  position: relative;
+
+  .header {
+    background: $kitkat-red;
+    color: $white;
+    position: relative;
+    padding-top: 16px;
+    padding-bottom: 170px;
+    z-index: 999;
+    
+    &.mobileAlign{
+      @include mobile {
+        padding-bottom: 70%;
+      }
+    }
+
+    @include desktop {
+      box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14),
+        0 1px 10px 0 rgba(0, 0, 0, 0),
+        0 2px 4px -1px rgba(0, 0, 0, 0.2);
+    }
+
+    @include mobile {
+      z-index: 0 !important;
+    }
+
+    .experience-control {
+      position: unset;
+      position: static;
+      box-shadow: none;
+      padding: 0;
+    }
+
+    .progress-meter {
+      padding-bottom: 25px;
+      text-align: center;
+      position: relative;
+      z-index: 3;
+
+      span {
+        margin-right: 10px;
+      }
+    }
+  }
+
+  .selected-finger {
+    position: relative;
+    bottom: calc(-100vw + 48px);
+    margin-left: 16px;
+    margin-top: calc(-100vw - 69px);
+
+    @include mobile {
+      min-height: 300px;
+      z-index: 1;
+      position: absolute;
+      top: 10rem;
+      margin-left: 16px;
+      width: 100%;
+      margin-top: 0;
+    }
+
+
+    &:not(.chocolatory) {
+      @include mobile {
+        top: 12rem;
+      }
+
+      .card-carousel {
+        .finger {
+          height: 250px !important;
+          width: 88px !important;
+          &.active {
+            height: calc(100% + 50px) !important;
+            bottom: -7px !important;
+            @include mobile {
+              bottom: 0 !important;
+              height: calc(100% + 20px) !important;
+            }
+          }
+        }
+
+        .item {
+          height: 250px !important;
+          width: 88px !important;
+          position: relative;
+        }
+      }
+    }
+
+    .card-carousel {
+      .carousel {
+        overflow: visible !important;
+
+        .finger {
+          background: url(assets/img/finger-outline-rotated.svg) transparent no-repeat;
+          background-size: 100% 100%;
+          transform: scale(1, 1);
+          cursor: pointer;
+
+          img {
+            height: 100%;
+          }
+
+          // @include mobile {
+          //   height: 80vw;
+          // }
+        }
+
+        .active {
+          position: absolute;
+          bottom: 0;
+          width: 100%;
+          height: calc(100% + 50px);
+        }
+
+        .content {
+          left: -150px;
+        }
+
+        .item {
+          min-width: 15%;
+          margin: 10px;
+
+          img {
+            width: 100%;
+          }
+
+          
+          @include mobile {
+            padding: 0;
+          }
+
+          // @include desktop {
+          //   height: 32vw !important;
+          // }
+        }
+      }
+
+      &.chocolatory {
+        &.pre-loading {
+          .content {
+            @include desktop {
+              left: -30% !important;
+            }
+          }
+        }
+
+        .content {
+          left: 0;
+
+          @include desktop {
+            left: -30% !important;
+          }
+
+          img {
+            cursor: pointer;
+          }
+        }
+
+        .item {
+          // @include mobile {
+          //   min-width: 275px;
+          // }
+        }
+
+        .active {
+          position: unset;
+        }
+      }
+    }
+  }
+
+  .selector {
+    position: relative;
+    bottom: 90px;
+    left: 0;
+    margin-bottom: -90px;
+
+    @include mobile {
+      z-index: 2;
+    }
+
+    .carousel {
+      padding-bottom: 16px;
+
+      .title {
+        margin-bottom: 0
+      }
+
+      .desc {
+        @extend .b3;
+        color: $black;
+        margin-bottom: 22px;
+      }
+    }
+
+    .link {
+      padding: 0 16px;
+      padding-bottom: 16px;
+    }
+  }
+
+  &.bs-fingers {
+    position: initial;
+    min-height: 540px;
+
+    .header {
+      top: 0;
+      width: 100%;
+      padding: 19px 0;
+    }
+
+    .row.select-finger-wrapper {
+      background: $kitkat-red;
+      position: relative;
+
+      z-index: 1;
+
+      // &:after {
+      //     content: "";
+      //     width: 100%;
+      //     height: 40%;
+      //     position: absolute;
+      //     display: inline-block;
+      //     left: 0;
+      //     z-index: -1;
+      //     top: 60%;
+      //     border-top: 520px solid #fff;
+      //     border-left: 100px solid #fff;
+      //     -webkit-transform: rotate(11deg);
+      //     transform: rotate(11deg);
+      //  }
+      //  &:before {
+      //     content: "";
+      //     width: 100%;
+      //     height: 100%;
+      //     position: absolute;
+      //     display: inline-block;
+      //     left: -292px;
+      //     z-index: 0;
+      //     top: 60%;
+      //     border-left: 300px solid $kitkat-red;
+      //     -webkit-transform: rotate(36deg);
+      //     transform: rotate(36deg);
+      //  }
+      .medium-bottom {
+        position: absolute;
+        width: 50%;
+        bottom: 0;
+        background: $white;
+      }
+    }
+
+    .bs-selector {
+      background: $white;
+      box-shadow: 0 8px 10px 0 rgba(134, 23, 35, 0.5);
+      padding-left: 0;
+      min-height: 600px;
+
+      >h5.title {
+        color: $kitkat-red;
+        text-align: center;
+
+      }
+
+      .icon-tick {
+        color: $kitkat-red;
+      }
+
+      .progress-meter {
+        text-align: center;
+        position: relative;
+        color: $kitkat-red;
+        bottom: 10px;
+      }
+
+      .card-wrapper {
+        display: flex;
+        display: -webkit-flex;
+        flex-wrap: wrap;
+        -webkit-flex-wrap: wrap;
+
+        .carousel-card {
+          width: 50%;
+          display: flex;
+          display: -webkit-flex;
+          align-items: center;
+          -webkit-align-items: center;
+          justify-content: space-between;
+          -webkit-justify-content: space-between;
+          text-align: left;
+          padding: 30px 16px;
+          border: 1px solid #f4f4f4;
+          box-shadow: none;
+          position: relative;
+
+          &:hover {
+            box-shadow: 0 8px 10px 0 rgba(134, 23, 35, 0.5);
+            z-index: 14;
+          }
+
+          h5.title {
+            margin-bottom: 0;
+            text-align: left;
+          }
+
+          >span {
+            position: absolute;
+            right: 16px;
+            top: 32px;
+          }
+        }
+      }
+    }
+
+    .link {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      padding: 0 16px 16px;
+      display: inline-block;
+
+      button {
+        width: 100%;
+      }
+    }
+
+    .select-finger-wrapper {
+      min-height: 540px;
+    }
+
+    .selected-finger {
+      bottom: 0;
+      margin-left: 0;
+      margin-top: 5%;
+
+      ngx-hm-carousel {
+        padding-left: 10%;
+        padding-top: 50px;
+      }
+
+      .card-carousel {
+        .carousel {
+          .item {
+            min-width: 10%;
+            // margin: 0;
+            height: 100%;
+          }
+
+          &.active {
+            top: 0;
+          }
+
+          .content {
+            height: 100%;
+            left: -10%;
+            transition: all 1s ease 0s !important;
+          }
+
+          .finger {
+            height: 100%;
+            z-index: 100;
+            background-size: 100% 100%;
+            transform: scale(1, 1);
+
+            img {
+              height: 100%;
+            }
+
+            &.active {
+              // position: relative;
+              // top: -50px;
+              // height: calc(100% + 50px);
+              position: absolute;
+              bottom: 7px;
+              top: unset !important;
+              height: calc(100% + 50px);
+              transition: all 1s linear;
+              width: inherit;
+              left: 0;
+
+              img:nth-last-of-type(1) {
+                z-index: -1;
+                width: 100%;
+                height: 100%;
+              }
+            }
+          }
+        }
+      }
+    }
+
+  }
+
+  .progress-bar {
+    color: $kitkat-red;
+    font-weight: 500;
+    @include flexbox();
+    justify-content: center;
+    margin-top: 20px;
+    position: relative;
+    bottom: 50px;
+
+    >span {
+      position: unset !important;
+      margin-right: 10px;
+
+      &:last-of-type {
+        margin: 0;
+      }
+    }
+  }
+
+  .tall-bottom-outline.chocolatory {
+    position: relative;
+  }
+}

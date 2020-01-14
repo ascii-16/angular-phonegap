@@ -1,0 +1,40 @@
+a {
+    color: $kitkat-red;
+    text-decoration: none;
+    cursor: pointer;
+    &:hover {
+        text-decoration: underline; 
+    }
+    &:visited {
+        color: $dark-red;
+    }
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: $avenir-black;
+}
+h1 {
+    font-size: 36px;
+    line-height: 40px;
+}
+h2 {
+    font-size: 30px;
+    line-height: 34px;
+}
+h3 {
+    font-size: 24px;
+    line-height: 28px;
+}
+h4 {
+    font-size: 20px;
+    line-height: 24px;
+}
+h5 {
+    font-size: 17px;
+    line-height: 21px;
+}
+h6 {
+    font-size: 14px;
+    line-height: 17px;
+}

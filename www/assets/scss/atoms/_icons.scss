@@ -1,0 +1,172 @@
+[class^="icon-"],
+[class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  &.dark {
+    color: $kitkat-red;
+  }
+
+  &.light {
+    color: $white;
+  }
+}
+
+.icon-Add:before {
+  content: "\e900";
+}
+
+.icon-basket-empty:before {
+  content: "\e901";
+}
+
+.icon-basket-filled:before {
+  content: "\e902";
+}
+
+.icon-checkbox-active-hover:before {
+  content: "\e903";
+}
+
+.icon-checkbox-active:before {
+  content: "\e904";
+}
+
+.icon-checkbox-default:before {
+  content: "\e905";
+}
+
+.icon-checkbox-disabled:before {
+  content: "\e906";
+}
+
+.icon-Checkbox-Hover:before {
+  content: "\e907";
+}
+
+.icon-Checkbox:before {
+  content: "\e908";
+}
+
+.icon-close:before {
+  content: "\e909";
+}
+
+.icon-edit:before {
+  content: "\e90a";
+}
+
+.icon-Form-Checkbox-Active:before {
+  content: "\e90b";
+}
+
+.icon-Icon-Arrow-down-Small:before {
+  content: "\e90c";
+}
+
+.icon-Icon-Arrow-left-Small:before {
+  content: "\e90d";
+}
+
+.icon-Icon-Arrow-right-Small:before {
+  content: "\e90e";
+}
+
+.icon-Icon-Arrow-Up-Small:before {
+  content: "\e90f";
+}
+
+.icon-Icon-facebook:before {
+  content: "\e910";
+}
+
+.icon-Icon-google-plus:before {
+  content: "\e911";
+}
+
+.icon-Icon-Instagram:before {
+  content: "\e912";
+}
+
+.icon-Icon-twitter:before {
+  content: "\e913";
+}
+
+.icon-menu:before {
+  content: "\e914";
+}
+
+.icon-Minus:before {
+  content: "\e915";
+}
+
+.icon-Personalise:before {
+  content: "\e916";
+}
+
+.icon-Radio-Active-hover:before {
+  content: "\e917";
+}
+
+.icon-Radio-Active:before {
+  content: "\e918";
+}
+
+.icon-Radio-default:before {
+  content: "\e919";
+}
+
+.icon-Radio-disabled:before {
+  content: "\e91a";
+}
+
+.icon-Radio-hover-disabled:before {
+  content: "\e91b";
+}
+
+.icon-Radio-hover:before {
+  content: "\e91c";
+}
+
+.icon-selected:before {
+  content: "\e91d";
+}
+
+.icon-tick:before {
+  content: "\e91e";
+}
+
+.icon-Trapezoid-Filled:before {
+  content: "\e91f";
+}
+
+.icon-Trapezoid:before {
+  content: "\e920";
+}
+
+.icon-Trapezoid-empty:before {
+  content: "\e920";
+  color: $grey;
+
+  &.dark {
+    color: $dark-red;
+  }
+}
+
+.icon-edit-pen:before {
+  content: "\e921";
+}
+
+.icon-user:before {
+  content: "\e922";
+}

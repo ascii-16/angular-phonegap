@@ -1,0 +1,35 @@
+.breadcrumb {
+
+  font-family: $avenir-roman;
+
+  a.item {
+    display: inline-block;
+    font-size: 12px;
+    margin-right: 10px;
+  }
+
+  &-light {
+    a.item {
+      color: $kitkat-red;
+
+      &.active {
+        color: $dark-grey;
+        font-size: 12px;
+        pointer-events: none;
+      }
+    }
+  }
+
+  &-dark {
+    a.item {
+      color: $white;
+
+      &.active {
+        color: rgba(255, 255, 255, 0.6);
+        font-size: 12px;
+        pointer-events: none;
+      }
+    }
+  }
+
+}

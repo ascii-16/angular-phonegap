@@ -1,0 +1,19 @@
+.sign-up {
+  .submit {
+    margin-top: 20px;
+  }
+
+  .alert a {
+    color: $white;
+    text-decoration: underline;
+  }
+
+  .checkbox {
+    margin: 15px 0;
+  }
+
+  .radio-title {
+    @extend .b2;
+    margin: 10px 0;
+  }
+}

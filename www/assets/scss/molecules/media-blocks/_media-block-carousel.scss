@@ -1,0 +1,19 @@
+app-media-block-carousel {
+  @include desktop {
+    .row.text-desc {
+      position: relative;
+      padding-bottom: 110px;
+
+      .small-top-custom {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+
+        &:after {
+          height: 15vw;
+          width: 100%;
+        }
+      }
+    }
+  }
+}

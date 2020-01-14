@@ -1,0 +1,379 @@
+.ingredients {
+  position: relative;
+
+  .header {
+    background: $kitkat-red;
+    color: $white;
+    position: relative;
+    padding-top: 16px;
+    padding-bottom: 24px;
+    z-index: 999;
+
+    @include desktop {
+      box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14),
+        0 1px 10px 0 rgba(0, 0, 0, 0),
+        0 2px 4px -1px rgba(0, 0, 0, 0.2);
+      position: relative;
+      padding-bottom: 70px;
+    }
+
+    .experience-control {
+      position: unset;
+      box-shadow: none;
+      padding: 0;
+
+      @include ie-edge {
+        position: static;
+      }
+
+      // &:after {
+      //     @include desktop {
+      //         // content: "";
+      //         // background: url(assets/img/angled-finger-outline.svg) no-repeat left 85%;
+      //         // background-size: 250px;
+      //         // width: 100%;
+      //         // height: 100vh;
+      //         // position: absolute;
+      //         // z-index: 3;
+      //         content: "";
+      //         background: url(assets/img/angled-finger-outline.svg) no-repeat left 85%;
+      //         background-size: 250px;
+      //         width: 100%;
+      //         height: 100vh;
+      //         position: absolute;
+      //         z-index: 3;
+      //     }
+      // }
+    }
+
+    .title {
+      margin: 0;
+      padding-top: 13px;
+      padding-bottom: 3px;
+      text-align: center;
+    }
+
+    .progress-meter {
+      text-align: center;
+
+      span {
+        margin-right: 10px;
+      }
+    }
+  }
+
+  .selector-outer {
+    position: relative;
+  }
+
+  .image-wrapper,
+  .selector-outer {
+    padding: 0;
+
+    .selected-ingredient-wrapper {
+      position: relative;
+
+      @include mobile {
+        height: 90vw !important;
+      }
+
+      @include desktop {
+        min-height: 600px;
+      }
+
+      @include min-width(1600px) {
+        min-height: 80vh;
+      }
+
+      .choco-img-wrap {
+        position: absolute;
+        // @include css3-prefix(transform, rotate(-55deg));
+        width: 52vw;
+        bottom: 0%;
+        right: 30%;
+
+        img {
+          width: 100%;
+          height: 100%;
+        }
+
+        @include desktop {
+          width: 27vw;
+        }
+
+        // @include min-width(1600px) {
+        //   width: 17vw;
+        //   bottom: 8%;
+        //   right: 38%;
+        // }
+
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+
+      .base-img {
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+
+      .selected-ingredient {
+
+        .img-0,
+        .img-1,
+        .img-2 {
+          position: absolute;
+          width: 28%;
+          z-index: 1;
+
+          &.bowl {
+            z-index: 0 !important;
+          }
+
+          img {
+            // border-radius: 50%;
+            width: 100%;
+            height: 100%;
+          }
+        }
+
+        .img-0 {
+          top: 21%;
+          left: 6%;
+        }
+
+        .img-1 {
+          top: 2%;
+          left: 31%;
+        }
+
+        .img-2 {
+          bottom: 0%;
+          right: 4%;
+        }
+      }
+    }
+  }
+
+  // .selected-ingredient {
+  //     width: 60%;
+  //     overflow: hidden;
+  //     transform: rotate(45deg);
+  //     @include mobile {
+  //         top: 0;
+  //     }
+  //     img {
+  //         width: 100%;
+  //     }
+  //     .img-0, .img-1, .img-2, .preview-img {
+  //         position: absolute;
+  //         left: 0;
+  //         height: 100%;
+  //     }
+  // }
+  .tall-bottom-outline {
+    @include mobile {
+      position: absolute;
+      top: 0;
+      z-index: -1;
+    }
+  }
+
+  .selector {
+    position: relative;
+
+    .carousel {
+      padding-bottom: 16px;
+    }
+
+    .link {
+      padding: 0 16px;
+      padding-bottom: 16px;
+    }
+  }
+
+  &.bs-ingredients {
+    position: initial;
+
+    .row.ingredient-wrapper {
+      min-height: 540px;
+      background: $kitkat-red;
+      position: relative;
+      //  &:after {
+      //     content: "";
+      //     width: 100%;
+      //     height: 40%;
+      //     position: absolute;
+      //     display: inline-block;
+      //     left: 0;
+      //     z-index: 1;
+      //     top: 420px;
+      //     border-top: 520px solid #fff;
+      //     border-left: 100px solid #fff;
+      //     -webkit-transform: rotate(11deg);
+      //     transform: rotate(11deg);
+      //  }
+      //  &:before {
+      //     content: "";
+      //     width: 100%;
+      //     height: 100%;
+      //     position: absolute;
+      //     display: inline-block;
+      //     left: -292px;
+      //     z-index: 2;
+      //     top: 414px;
+      //     border-left: 300px solid $kitkat-red;
+      //     -webkit-transform: rotate(41deg);
+      //     transform: rotate(41deg);
+      //  }
+      // &:after {
+      //     content: "";
+      //     width: 100%;
+      //     height: 40%;
+      //     position: absolute;
+      //     display: inline-block;
+      //     left: 0;
+      //     z-index: 1;
+      //     top: 60%;
+      //     border-top: 520px solid #fff;
+      //     border-left: 100px solid #fff;
+      //     -webkit-transform: rotate(11deg);
+      //     transform: rotate(11deg);
+      //  }
+      //  &:before {
+      //     content: "";
+      //     width: 100%;
+      //     height: 100%;
+      //     position: absolute;
+      //     display: inline-block;
+      //     left: -292px;
+      //     z-index: 2;
+      //     top: 60%;
+      //     border-left: 300px solid $kitkat-red;
+      //     -webkit-transform: rotate(41deg);
+      //     transform: rotate(41deg);
+      //  }
+    }
+
+    .header {
+      width: 100%;
+      padding-bottom: 19px;
+      padding-top: 19px;
+    }
+
+    .tall-bottom-outline {
+      position: absolute;
+      bottom: 0;
+      background: $white;
+      width: 50%;
+    }
+
+    // .selected-ingredient {
+    //     position: relative;
+    //    // width: 400px;
+    //     left: 0;
+    //     bottom: -80px;
+    //     transform: rotate(45deg);
+    //     width: 25vw;
+    //     padding-top: 10%;
+    //     z-index: 14;
+
+    // }
+    div.selected-ingredient {
+      img {
+        width: 100%;
+      }
+    }
+
+    canvas.selected-ingredient {
+      margin-top: 0;
+    }
+
+    .selector {
+      margin-bottom: 0;
+      bottom: 0;
+
+      >h5.title {
+        text-align: center;
+        color: $kitkat-red;
+      }
+
+      .progress-meter {
+        text-align: center;
+        color: $kitkat-red;
+        position: relative;
+        bottom: 10px;
+        margin-bottom: 10px;
+      }
+    }
+
+    .text-wrapper {
+      padding-left: 0;
+      box-shadow: 0 8px 10px 0 rgba(134, 23, 35, 0.5);
+      background: $white;
+      position: relative;
+      z-index: 3;
+      min-height: 600px;
+
+      >div.link {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        padding: 30px;
+        padding-bottom: 16px;
+
+        * {
+          width: 100%;
+        }
+      }
+
+      .card-wrapper {
+        display: flex;
+        display: -webkit-flex;
+        flex-wrap: wrap;
+        -webkit-flex-wrap: wrap;
+        margin-bottom: 90px;
+
+        .carousel-card {
+          // flex: 0 0 50%;
+          // -webkit-flex: 0 0 50%;
+          // -ms-flex: 0 0 50%;
+          // -webkit-box-flex: 0 0 50%;  
+          // -moz-box-flex: 0 0 50%;
+          width: 50%;
+          box-shadow: none;
+          border: 1px solid #f4f4f4;
+          padding: 30px 16px;
+          display: flex;
+          display: -webkit-flex;
+          justify-content: space-between;
+          -webkit-justify-content: space-between;
+          align-items: center;
+          -webkit-align-items: center;
+
+          &:hover {
+            box-shadow: 0 8px 10px 0 rgba(134, 23, 35, 0.5);
+            z-index: 13;
+          }
+
+          >h5.title {
+            margin-bottom: 0;
+            text-align: left;
+          }
+
+          span.icon-tick {
+            color: $kitkat-red;
+          }
+        }
+      }
+    }
+
+    .image-wrapper {
+      position: relative;
+
+    }
+  }
+}

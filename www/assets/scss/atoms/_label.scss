@@ -1,0 +1,23 @@
+label {
+  font-family: $avenir-black;
+  font-size: 24px;
+  line-height: 24px;
+}
+
+.banner {
+  font-family: $avenir-black;
+  font-size: 24px;
+  padding: 8px 16px;
+  position: relative;
+  top: -45px;
+
+  &-light {
+    background: $white;
+    color: $kitkat-red;
+  }
+
+  &-dark {
+    background: $kitkat-red;
+    color: $white;
+  }
+}

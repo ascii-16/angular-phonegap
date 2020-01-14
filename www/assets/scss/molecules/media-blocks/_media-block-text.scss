@@ -1,0 +1,43 @@
+.media-block-text {
+
+  //margin-bottom: 40px;
+  label {
+    color: $dark-grey;
+  }
+
+  .title {
+    color: $kitkat-red;
+    margin: 0;
+    margin-top: 8px;
+    @extend h3;
+
+    @include desktop {
+      font-size: 30px;
+      line-height: 34px;
+    }
+  }
+
+  .b2 {
+    display: inline-block;
+    padding-top: 16px;
+  }
+  div.b2{
+    p{
+      margin: 0;
+      padding-bottom: 3px;
+    }
+  }
+  .submit {
+    padding-top: 24px;
+  }
+
+  &.dark-bg {
+    background: $kitkat-red;
+
+    .title,
+    label,
+    .b2 {
+      color: $white;
+    }
+  }
+}

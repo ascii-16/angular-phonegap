@@ -1,0 +1,380 @@
+$transition_time:.2s;
+
+.image-carousel {
+  color: white;
+
+  .content {
+    display: flex;
+    min-height: 341px;
+    transition: all 0.7s ease 0s;
+
+    @include desktop {
+      min-height: 415px;
+    }
+
+    .item {
+      width: 100%;
+      padding: .5em;
+      display: block;
+      opacity: 1;
+
+      transition: opacity 0.295s linear $transition_time;
+
+      &.fade_animation {
+        transition: opacity 0.295s linear $transition_time;
+      }
+
+      &.fade_animation_0 {
+        transition: opacity 0.295s linear;
+      }
+
+      .carousal-item-props {
+        text-align: center;
+        display: none;
+        padding-top: 20px;
+        padding-bottom: 16px;
+
+        @include desktop {
+          display: block;
+        }
+
+        .title {
+          margin: 0;
+          margin-bottom: 5px;
+        }
+
+        a.title {
+          color: #fff;
+        }
+      }
+
+      &.visible {
+        opacity: 1;
+        position: relative;
+
+        .carousal-item-props {
+          display: block;
+        }
+      }
+
+      .img {
+        width: 100%;
+        text-align: center;
+        display: block;
+        background-size: cover;
+        background-position: center;
+        position: relative;
+      }
+    }
+
+  }
+
+  .direction {
+    @include desktop {
+      height: 60% !important;
+    }
+  }
+
+  ul.indicators li {
+    @include desktop {
+      padding: 0 !important;
+    }
+  }
+
+  .ball {
+    width: 22px;
+    height: 4px;
+    background: $dark-red;
+
+    @include desktop {
+      width: 90px;
+    }
+
+    &.visible {
+      background: $white !important;
+    }
+  }
+
+  .click-area {
+    width: 50px;
+    text-align: center;
+
+    i {
+      font-size: 3em;
+    }
+
+    >span {
+      @include desktop {
+        background: #fff;
+        color: $kitkat-red;
+        padding: 10px;
+      }
+    }
+  }
+}
+
+.carousel-sm{
+  @include mobile{
+    display: block;
+  }
+  @include desktop{
+    display: none;
+  }
+}
+.card-carousel {
+  @extend .image-carousel;
+
+  .content {
+    min-height: inherit;
+    left: 0;
+
+    @include desktop {
+      transition: none !important;
+    }
+  }
+
+  .item {
+    min-width: 275px;
+  }
+
+  .click-area {
+    color: $kitkat-red;
+  }
+
+  .icon-Add {
+    color: $dark-grey;
+  }
+
+  .icon-tick {
+    color: $kitkat-red;
+  }
+
+  .icon-Add,
+  .icon-tick {
+    font-size: 24px !important;
+  }
+
+  .carousel-card {
+    position: relative;
+
+    .title {
+      margin: 0;
+      color: #2c2d31;
+    }
+
+    .accordion {
+      .panel {
+        .panel-title {
+          @extend .b3;
+          font-weight: 300;
+          font-family: $avenir-roman;
+          color: $kitkat-red;
+        }
+
+        .panel-body {
+          color: $black;
+          margin-top: 24px;
+
+          .accordion-text {
+            margin-top: 0;
+            margin-bottom: 10px;
+          }
+        }
+      }
+    }
+  }
+
+  span.icon-Icon-Arrow-right-Small {
+    position: absolute;
+    bottom: 4rem;
+  }
+
+  span.icon-Icon-Arrow-left-Small {
+    position: absolute;
+    bottom: 4rem;
+    left: 4px;
+  }
+
+}
+
+.image-carousel-light {
+  @extend .image-carousel;
+
+  .content {
+    left: 0;
+  }
+
+  color: unset;
+
+  .ball {
+    background: $grey !important;
+
+    &.visible {
+      background: $kitkat-red !important;
+    }
+  }
+
+  .click-area {
+    >span {
+      @include desktop {
+        background: $kitkat-red;
+        color: $white;
+        padding: 10px;
+
+        &:hover {
+          background: $dark-red;
+        }
+      }
+    }
+  }
+}
+
+.owl-carousel {
+  position: relative;
+
+  .owl-stage-outer {
+    a.title {
+      color: $white;
+      text-align: center;
+
+      &:hover {
+        text-decoration: none;
+
+        >* {
+          opacity: 0.9;
+        }
+      }
+    }
+  }
+
+  .owl-nav {
+
+    .owl-prev,
+    .owl-next {
+      position: absolute;
+      bottom: 54%;
+      background: #fff !important;
+      color: $kitkat-red !important;
+      padding: 10px !important;
+      border-radius: 0;
+
+      &:hover {
+        background: #fff;
+        color: $kitkat-red;
+      }
+
+      @include mobile {
+        //display: none;
+      }
+    }
+
+    .owl-prev {
+      left: -16px;
+    }
+
+    .owl-next {
+      right: -16px;
+    }
+  }
+
+  .owl-dots {
+    padding: 16px 0;
+
+    .owl-dot {
+      span {
+        width: 70px;
+        height: 4px;
+        background: $dark-red;
+        border-radius: 0;
+        margin: 0;
+
+        @include desktop {
+          width: 190px;
+        }
+      }
+
+      &.active,
+      &:hover {
+        span {
+          background: $white !important;
+        }
+      }
+    }
+  }
+}
+
+.optional-products-carousel {
+  margin-left: 8px;
+  margin-right: 8px;
+
+  .row {
+    margin: 0;
+  }
+
+  .owl-dots{
+    padding: 0px !important;
+    //display: flex !important;
+    display: none !important;
+    width: 100% !important;
+    margin: 0px auto !important;
+    padding-top: 8px !important;
+    padding-bottom: 8px !important;
+
+    // Small devices (landscape phones, 576px and up)
+    @media (min-width: 576px) {
+      width: 100% !important;
+    }
+
+    // Medium devices (tablets, 768px and up)
+    @media (min-width: 768px) {
+      width: 100% !important;
+    }
+
+    // Large devices (desktops, 992px and up)
+    @media (min-width: 992px) {
+      width: 50% !important;
+    }
+
+    // Extra large devices (large desktops, 1200px and up)
+    @media (min-width: 1200px) {
+      width: 50% !important;
+    }
+
+    .owl-dot {
+      display: flex !important;
+      flex-basis: 100%;
+
+      span {
+        width: 100% !important;
+      }
+    }
+  }
+
+  .owl-nav {
+
+    .owl-prev,
+    .owl-next {
+      &:hover {
+        -webkit-box-shadow: 0 8px 10px 0 rgba(134, 23, 35, 0.5);
+        -moz-box-shadow: 0 8px 10px 0 rgba(134, 23, 35, 0.5);
+        box-shadow: 0 8px 10px 0 rgba(134, 23, 35, 0.5);
+      }
+    }
+
+    .icon-Icon-Arrow-right-Small,
+    .icon-Icon-Arrow-left-Small {
+      display: block;
+      padding: 10px 10px;
+    }
+  }
+
+  .owl-item {
+    .img {
+      padding: 8px 0;
+    }
+
+    .title {
+      margin: 8px 0;
+    }
+  }
+}

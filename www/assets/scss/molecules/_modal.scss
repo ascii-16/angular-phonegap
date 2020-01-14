@@ -1,0 +1,261 @@
+.pop-up {
+  background: $white;
+  padding: 16px;
+  position: fixed;
+  bottom: 0;
+  z-index: 999 !important;
+  
+  @include mobile {
+    //height: 100%;
+    width: 100%;
+    z-index: 2000;
+  }
+
+  @include desktop {
+    padding: 24px;
+  }
+
+  .icon-close-wrapper {
+    text-align: right;
+    margin-bottom: 16px;
+    cursor: auto;
+
+    .icon-close {
+      color: $kitkat-red;
+      cursor: pointer;
+      pointer-events: all;
+    }
+  }
+
+  .title {
+    @extend h3;
+    color: $black;
+    margin: 16px 0;
+  }
+
+  .box-wrap{
+    position: relative;
+
+    .overlap-box-size{
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-color: white;
+      opacity: 0.5;
+      -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+      filter: grayscale(100%);
+    }
+  }
+  
+  .box {
+    color: $grey;
+    border: 2px solid $grey;
+    padding: 16px;
+    margin-bottom: 8px;
+
+    @include desktop {
+      text-align: center;
+      height: 100%;
+    }
+
+    @include mobile {
+      @include flexbox();
+      flex-wrap: wrap;
+    }
+
+    .image {
+      width: 35%;
+
+      @include desktop {
+        width: 100%;
+      }
+
+      img {
+        @include desktop {
+          height: 35px;
+        }
+      }
+    }
+
+    .box-details {
+      width: calc(65% - 16px);
+      margin-left: 16px;
+
+      @include desktop {
+        width: 100%;
+        margin: 10px 0;
+      }
+
+      .name {
+        @extend h4;
+        color: $black;
+        margin-bottom: 5px;
+
+        @include desktop {
+          font-size: 16px;
+        }
+      }
+
+      .price {
+        @extend .b2;
+        color: $black;
+      }
+    }
+
+    .customisation-info {
+      margin-top: 8px;
+      margin-bottom: -8px;
+      color: $black;
+
+      @include desktop {
+        width: 100%;
+      }
+
+      span.icon-edit-pen {
+        margin-right: 5px;
+        color: $dark-grey;
+        font-weight: 900;
+      }
+    }
+  }
+
+  .selected {
+    border-color: $kitkat-red !important;
+  }
+
+  .msg {
+    color: $grey;
+    border: 2px solid $grey;
+    padding: 16px;
+    margin-bottom: 8px;
+    text-align: center;
+    pointer-events: none;
+    display: inline-flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+
+    @include desktop {
+      margin-top: 8px;
+    }
+
+    .icon-Add,
+    .icon-tick {
+      margin-right: 5px;
+    }
+
+    &.selected {
+      color: $black;
+      cursor: pointer !important;
+      pointer-events: all;
+
+      .icon-tick {
+        color: $kitkat-red;
+      }
+    }
+
+    &.active {
+      color: $black;
+      pointer-events: all;
+    }
+  }
+
+  .login-page {
+    margin: 0;
+    width: 100%;
+    padding-top: 0;
+
+    .guest-session {
+      text-align: center;
+
+      >div {
+        margin: 10px 0;
+        font-size: 13px;
+      }
+    }
+
+    .back-button,
+    .guest-login-button {
+      @extend .b2;
+      color: $dark-red;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+  }
+}
+
+.pop-desktop {
+  position: fixed;
+  z-index: 1000;
+  width: 100%;
+  height: 100%;
+  bottom: 0;
+  background: rgba(196, 0, 24, 0.8);
+  @include flexbox();
+  justify-content: center;
+  align-items: center;
+  @include css3-prefix(transition, background 6s ease);
+
+  .pop-up {
+    width: 40%;
+    position: relative;
+  }
+
+  .btn {
+    width: 100%;
+  }
+
+  .grid {
+    display: grid;
+    display: -ms-grid;
+    grid-template-columns: repeat(2, 1fr);
+    -ms-grid-columns: 50% 50%;
+    grid-auto-rows: 1fr;
+    grid-column-gap: 8px;
+    grid-row-gap: 8px;
+
+    .grid-item {
+      position: relative;
+      height: 100%;
+
+      .overlap-box-size{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: white;
+        opacity: 0.5;
+        -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+        filter: grayscale(100%);
+      }
+
+      @include ie {
+        margin-right: 8px;
+      }
+
+      @include ie-edge {
+        &:first-of-type {
+          grid-column: 1;
+          -ms-grid-column: 1;
+          grid-row: 1;
+          -ms-grid-row: 1;
+        }
+
+        &:last-of-type {
+          grid-column: 2;
+          -ms-grid-column: 2;
+          grid-row: 1;
+          -ms-grid-row: 1;
+        }
+      }
+    }
+  }
+}
+
+.trigger-click {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 998;
+}

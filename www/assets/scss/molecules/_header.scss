@@ -1,0 +1,96 @@
+.inc-header {
+    background: $kitkat-red;
+    color: $white;
+    padding:16px;
+    height: 100%;
+    .body {
+        //margin: 0 8px;
+        height: 100%;
+    }
+    &.large {
+        .body {
+            //@include desktop {
+                @include flexbox();
+                flex-direction: column;
+                justify-content: center;
+                // padding: 0 3%;
+                // padding-right: 15%;
+            //}
+            .title {
+                margin: 16px 0;
+                @include desktop {
+                    margin-top: 0;
+                }
+            }
+            .sub-text h4 {
+                margin: 0;
+                margin-bottom: 40px;
+            }
+            .sub-text p {
+                font-family: 'Avenir-Roman';
+                margin: 0;
+                margin-bottom: 40px;
+                font-size: 1rem;
+                line-height: 1.5rem;
+            }
+            .brand-elements {
+                @include flexbox()
+            }
+        }
+    }
+    &.medium {
+        position: relative;
+        h4 {
+            margin: 0;
+        }
+        .icon-close-wrapper {
+            text-align: right;
+            .icon-close {
+                color: $white;
+            } 
+        }  
+        .body {
+            margin: 0;
+        } 
+        .title {
+            margin: 0;
+            padding: 16px 0;
+            @include desktop {
+                text-align: center;
+            }
+            &.success {
+                margin-bottom: 8px;
+            }
+        } 
+        .sub-text {
+            @include flexbox();
+            justify-content: space-between;
+        } 
+        .body-text {
+            margin-top: 4px;
+        }
+    }
+    &.small {
+        position: relative;
+        .icon-close {
+            position: absolute;
+            right: 16px;
+        }
+        .body {
+            text-align: center;
+        }
+        h5 {
+            margin: 0;
+        }
+    }
+    .title.special-label{
+        font-family: 'Avenir-Black';
+        font-weight: lighter !important;
+    }
+    .title{
+        @include mobile{
+            margin-left: 0 !important;
+            margin-right: 0 !important;    
+        }
+    }
+}

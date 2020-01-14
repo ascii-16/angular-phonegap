@@ -1,0 +1,331 @@
+.chocolates {
+  position: relative;
+
+  // overflow: hidden;
+  .header {
+    @include mobile {
+      padding-bottom: 44px;
+      background: $kitkat-red;
+    }
+  }
+
+  .experience-control {
+    z-index: 3;
+    // &:after {
+    //     @include desktop {
+    //         content: "";
+    //         background: url(assets/img/angled-finger-outline.svg) no-repeat left 53%;
+    //         background-size: 250px;
+    //         width: 100%;
+    //         height: 100vh;
+    //         position: absolute;
+    //         z-index: 2;
+    //     }
+    // }
+  }
+
+  .visible {
+    .selected-chocolate img {
+      @include mobile {
+        display: block;
+      }
+    }
+  }
+
+  .img-carousel-wrapper {
+    position: relative;
+    z-index: 3;
+    background-size: 100%;
+    padding: 0;
+
+    .base-img-wrap {
+      width: 100%;
+      // height: 100%;
+      position: relative;
+
+      @include mobile {
+        height: 90vw !important;
+      }
+
+      @include desktop {
+        min-height: 600px;
+      }
+
+      @include min-width(1600px) {
+        //min-height: 80vh;
+        min-height: 800px;
+      }
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+
+      .img-0,
+        .img-1,
+        .img-2 {
+          position: absolute;
+          width: 28%;
+          z-index: 1;
+
+          &.bowl {
+            z-index: 0 !important;
+          }
+
+          img {
+            // border-radius: 50%;
+            width: 100%;
+            height: 100%;
+          }
+        }
+
+        .img-0 {
+          top: 21%;
+          left: 6%;
+        }
+
+        .img-1 {
+          top: 2%;
+          left: 31%;
+        }
+
+        .img-2 {
+          bottom: 0%;
+          right: 4%;
+        }
+    }
+
+    .selected-chocolate-wrap {
+      position: absolute;
+      // @include css3-prefix(transform, rotate(-55deg));
+      width: 52vw;
+      bottom: 0%;
+      right: 30%;
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+
+      @include desktop {
+        width: 27vw;
+      }
+      // @include min-width(1600px) {
+      //   width: 15vw;
+      //   bottom: 8%;
+      //   right: 38%;
+      // }
+    }
+  }
+
+  .selected-chocolate {
+    margin-bottom: -5px;
+    text-align: center;
+
+    @include mobile {
+      transform: rotate(45deg);
+      width: 70%;
+      margin: auto;
+      margin-top: 2rem;
+
+      img {
+        display: none;
+        width: 100%;
+      }
+    }
+  }
+
+  .selector {
+    position: relative;
+    left: 0;
+
+    .carousel {
+      padding-bottom: 16px;
+
+      @include mobile {
+        overflow: visible !important;
+      }
+    }
+
+    .link {
+      padding: 0 16px;
+      padding-bottom: 16px;
+      position: relative;
+    }
+
+    .tall-bottom-outline {
+      position: absolute;
+      left: 0;
+
+      @include desktop {
+        width: 50%;
+        bottom: 0;
+        background: $white;
+      }
+    }
+  }
+
+  .card-carousel {
+    .img {
+      height: 420px !important;
+      position: relative;
+      bottom: -65px;
+    }
+
+    .visible {
+      .carousel-card {
+        position: relative !important;
+      }
+    }
+
+    .carousel-card {
+      position: absolute;
+      bottom: 4%;
+    }
+  }
+
+  &.bs-chocolates {
+    background-color: $kitkat-red;
+    position: initial;
+    margin-left: 0;
+    margin-right: 0;
+
+    .img-carousel-wrapper {
+      padding-top: 10%;
+      position: relative;
+      z-index: 3;
+      // transform: rotate(45deg);
+      background-size: 100%;
+      padding: 0;
+
+
+      .selected-chocolate {
+        position: relative;
+        bottom: 0;
+        width: 25vw;
+        margin: auto 0;
+
+        .visible {
+          img {
+            visibility: visible;
+            display: block;
+          }
+        }
+
+        img {
+          width: 100%;
+          display: none;
+          //max-width: calc(100% - 30px);
+          margin: auto;
+          visibility: hidden;
+          transition: all ease 0.2s;
+          -webkit-transition: 0.2s;
+
+          &.visible,
+          &.icon-tick {
+            visibility: visible;
+          }
+        }
+
+      }
+    }
+
+    .selector {
+      bottom: 0;
+      margin-bottom: 0;
+      // &:after {
+      //     content: "";
+      //     width: 100%;
+      //     height: 40%;
+      //     position: absolute;
+      //     display: inline-block;
+      //     left: 0;
+      //     z-index: 0;
+      //     top: 60%;
+      //     border-top: 520px solid #fff;
+      //     border-left: 100px solid #fff;
+      //     -webkit-transform: rotate(11deg);
+      //     transform: rotate(11deg);
+      //  }
+      //  &:before {
+      //     content: "";
+      //     width: 100%;
+      //     height: 100%;
+      //     position: absolute;
+      //     display: inline-block;
+      //     left: -292px;
+      //     z-index: 1;
+      //     top: 60%;
+      //     border-left: 300px solid $kitkat-red;
+      //     -webkit-transform: rotate(41deg);
+      //     transform: rotate(41deg);
+      //  }
+
+
+    }
+
+    .text-wrap {
+      background: $white;
+      padding-left: 0;
+      box-shadow: 0 8px 10px 0 rgba(134, 23, 35, 0.5);
+      min-height: 600px;
+      position: relative;
+      z-index: 3;
+
+      >.title {
+        color: $kitkat-red;
+        text-align: center;
+      }
+
+      .link {
+        position: absolute;
+        bottom: 0;
+        padding: 30px;
+        padding-bottom: 16px;
+        width: 100%;
+
+        button {
+          width: 100%;
+          display: inline-block;
+        }
+      }
+
+      .carousel-card-wrapper {
+        display: flex;
+        display: -webkit-flex;
+        flex-wrap: wrap;
+        -webkit-flex-wrap: wrap;
+        margin-bottom: 90px;
+
+
+      }
+
+      .carousel-card {
+        width: 50%;
+        border: 1px solid #f4f4f4;
+        box-shadow: none;
+        display: flex;
+        display: -webkit-flex;
+        justify-content: space-between;
+        align-items: center;
+        -webkit-align-items: center;
+        padding: 30px 16px;
+
+        span.icon-tick {
+          color: $kitkat-red;
+        }
+
+        h5 {
+          margin-bottom: 0;
+          text-align: left;
+        }
+
+        &:hover {
+          box-shadow: 0 8px 10px 0 rgba(134, 23, 35, 0.5);
+          z-index: 13;
+        }
+      }
+    }
+
+  }
+}

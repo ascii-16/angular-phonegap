@@ -1,0 +1,27 @@
+.product-carousel {
+  .content {
+    @include desktop {
+      left: -30%;
+    }
+  }
+
+  a {
+    color: $white;
+  }
+
+  ul.indicators {
+    @include mobile {
+      bottom: 0 !important;
+    }
+
+    li {
+      padding: 0 !important;
+
+      .ball {
+        @include mobile {
+          width: 10.1vw;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,383 @@
+.review {
+  position: relative;
+
+  .header {
+    background: $kitkat-red;
+    color: $white;
+    position: relative;
+    padding-top: 16px;
+
+    //padding-bottom: 150px;
+    @include desktop {
+      padding: 16px 0;
+      box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14),
+        0 1px 10px 0 rgba(0, 0, 0, 0),
+        0 2px 4px -1px rgba(0, 0, 0, 0.2);
+    }
+
+    @include mobile {
+      padding-bottom: 90px;
+    }
+
+    .step-count {
+      text-align: center;
+    }
+
+    .close-icon {
+      color: $white;
+      position: absolute;
+      right: 16px;
+      top: 16px;
+    }
+
+    .prev-icon {
+      color: $white;
+      position: absolute;
+      left: 16px;
+      top: 16px;
+    }
+
+    .title {
+      margin: 0;
+      padding-top: 13px;
+      padding-bottom: 3px;
+      text-align: center;
+    }
+  }
+
+  .experience-control {
+    h5.title {
+      display: none;
+    }
+
+    padding-bottom: 16px;
+  }
+
+  .tall-bottom-outline {
+    position: absolute;
+  }
+
+  .carousel-wrapper {
+    position: relative;
+    width: 100%;
+
+    @include desktop {
+      position: unset;
+      margin-bottom: 0;
+    }
+
+    .image-carousel-light {
+      @include desktop {
+        height: unset !important;
+        padding-top: 9%;
+      }
+
+      .content {
+        min-height: 290px;
+
+        .item {
+          @include mobile {
+            padding-bottom: 4%;
+          }
+
+          // &.ingredient {
+          //   // transform: rotate(45deg);
+
+          //   .img {
+          //     @include desktop {
+          //       margin: 10%;
+          //       margin-bottom: 25%;
+          //       max-width: 27vw;
+          //     }
+
+          //     @include mobile {
+          //       max-width: 70%;
+          //       margin: 10%;
+          //       margin-bottom: 5%;
+          //     }
+          //   }
+          // }
+        }
+
+        .img {
+          width: 80%;
+          margin: 0 auto;
+          overflow: hidden;
+
+          img {
+            width: 100%;
+          }
+
+          @include desktop {
+            width: 475px;
+            margin: 0 auto;
+          }
+        }
+      }
+
+      .direction {
+        @include desktop {
+          top: 70px !important;
+        }
+      }
+
+      &.first {
+        .direction.left {
+          display: none !important;
+        }
+      }
+
+      &.last {
+        .direction.right {
+          display: none !important;
+        }
+      }
+
+      ul.indicators {
+        @include mobile {
+          bottom: -12px !important;
+        }
+
+        @include desktop {
+          display: none;
+        }
+      }
+
+      .ingredient {
+        .img {
+          position: relative;
+        }
+
+        // .img-0,
+        // .img-1,
+        // .img-2 {
+        //   position: absolute;
+        //   left: 0;
+        // }
+
+        .canvas {
+          width: 80%;
+          height: 100%;
+          margin: 0 auto;
+          position: absolute;
+          left: 0;
+
+          @include desktop {
+            width: 400px;
+            margin: 0 auto;
+          }
+        }
+      }
+
+      .image-msg {
+        .img {
+          position: relative;
+
+          >span {
+            @extend label;
+            position: absolute;
+            right: 15%;
+            bottom: 10%;
+            color: $black;
+            font-family: $din-next-stencil-ult-light;
+
+            // Small devices (landscape phones, 576px and up)
+            @media (min-width: 576px) {
+              font-size: 10px !important;
+              line-height: 11px !important;
+            }
+
+            // Medium devices (tablets, 768px and up)
+            @media (min-width: 768px) {
+              font-size: 16px !important;
+              line-height: 18px !important;  
+            }
+
+            // Large devices (desktops, 992px and up)
+            @media (min-width: 992px) {
+              font-size: 18px !important;
+              line-height: 16px !important;  
+            }
+
+            // Extra large devices (large desktops, 1200px and up)
+            @media (min-width: 1200px) {
+              font-size: 18px !important;
+              line-height: 16px !important;  
+            }
+
+          }
+        }
+      }
+    }
+  }
+
+  .details-wrapper {
+    margin: 0 16px;
+    margin-top: 60px;
+
+    @include mobile {
+      margin-top: 40px;
+    }
+  }
+
+  .quantity-selector-wrapper {
+    @include flexbox();
+    @include justify-content(space-between);
+    margin: 50px 0;
+    margin-right: -10px;
+
+    .label {
+      color: $dark-grey;
+    }
+  }
+
+  .amount-wrapper {
+    background: $light-grey;
+    padding: 16px;
+    padding-top: 28px;
+
+    .item {
+      @include flexbox();
+      @include justify-content(space-between);
+      margin-bottom: 6px;
+
+      .value {
+        @extend h5;
+      }
+    }
+
+    .total {
+      font-family: $avenir-black;
+      font-size: 24px !important;
+      font-weight: 900;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1.17;
+      margin-top: 22px;
+    }
+
+    .reminder {
+      color: $dark-grey;
+    }
+
+    .notice {
+      color: $dark-grey;
+      margin-top: 24px;
+      margin-bottom: 16px;
+    }
+  }
+
+  
+
+  // .pop-up {
+  //     background: $white;
+  //     padding: 16px;
+  //     position: fixed;
+  //     bottom: 0;
+  //     z-index: 20;
+  //     @include mobile {
+  //         height: 100%;
+  //         width: 100%;
+  //         z-index: 2000;
+  //     }
+  //     .login-page, .guest-session {
+  //         @include mobile {
+  //             margin: 0;
+  //         }
+  //         @include desktop {
+  //             // width: 80%;
+  //             // margin: 0 auto;
+  //         }
+  //         .icon-close {
+  //             color: $white;
+  //         }
+  //     }
+  //     .guest-session {
+  //         > div {
+  //             text-align: center;
+  //             width: 100%;
+  //             font-weight: 500;
+  //         }
+  //     }
+  //     .icon-close {
+  //         position: absolute;
+  //         right: 16px;
+  //         color: $kitkat-red;
+  //         cursor: pointer;
+  //     }
+  //     .title {
+  //         @extend h3;
+  //         color: $black;
+  //         margin: 16px 0;
+  //     }
+  // }
+  // .pop-desktop {
+  //     position: fixed;
+  //     z-index: 1000;
+  //     width: 100%;
+  //     height: 100%;
+  //     bottom: 0;
+  //     background: rgba(196, 0, 24, 0.8);
+  //     @include flexbox();
+  //     justify-content: center;
+  //     @include align-items(center);
+  //     .pop-up {
+  //         width: 40%;
+  //         position: relative;
+  //     }
+  //     .btn {
+  //         width: 100%;
+  //     }
+  // }
+}
+
+.ingredient-base {
+  position: relative;
+
+  .img-0,
+  .img-1,
+  .img-2 {
+    position: absolute;
+    width: 28%;
+    z-index: 1;
+
+    &.bowl {
+      z-index: 0 !important;
+    }
+
+    img {
+      // border-radius: 50%;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .img-0 {
+    top: 21%;
+    left: 6%;
+  }
+
+  .img-1 {
+    top: 2%;
+    left: 31%;
+  }
+
+  .img-2 {
+    bottom: 0%;
+    right: 4%;
+  }
+
+  .product-img {
+    position: absolute;
+    // @include css3-prefix(transform, rotate(-55deg));
+    width: 60%;
+    bottom: 0%;
+    right: 30%;
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+
+  }
+} 

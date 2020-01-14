@@ -1,0 +1,16 @@
+.toast-container {
+    &.toast-top-center {
+        top: 10%;
+    }
+    .ngx-toastr {
+        width: 60% !important;
+        box-shadow: 0 0 6px $dark-red !important;
+        border-radius: 0 !important;
+        @include mobile {
+            width: 90% !important;
+        }
+        &.toast-error {
+            background-color: $kitkat-red;
+        }
+    }
+}

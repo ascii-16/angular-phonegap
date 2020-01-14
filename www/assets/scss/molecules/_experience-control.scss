@@ -1,0 +1,65 @@
+.experience-control {
+  background: $kitkat-red;
+  color: $white;
+  position: relative;
+  padding-top: 16px;
+  z-index: 999 !important;
+
+  .brand-logo{
+    @include mobile {
+      @include flexbox();
+      //@include align-content('center');
+      brand-element{
+        margin: 0px auto;
+        display: block;
+      }
+    }
+
+    @include desktop {
+      position: absolute;
+      left: 50px;
+      top: 10px;
+    }
+  }
+  @include desktop {
+    box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14),
+      0 1px 10px 0 rgba(0, 0, 0, 0),
+      0 2px 4px -1px rgba(0, 0, 0, 0.2);
+    padding-bottom: 19px;
+    padding-top: 19px;
+  }
+
+  .step-count {
+    text-align: center;
+  }
+
+  .close-icon {
+    color: $white;
+    position: absolute;
+    right: 16px;
+    top: 16px;
+  }
+
+  .prev-icon {
+    color: $white;
+    position: absolute;
+    left: 16px;
+    top: 16px;
+  }
+
+  .title {
+    margin: 0;
+    padding-top: 8px;
+    padding-bottom: 3px;
+    text-align: center;
+  }
+
+  .progress-meter {
+    padding-bottom: 25px;
+    text-align: center;
+
+    span {
+      margin-right: 10px;
+    }
+  }
+}

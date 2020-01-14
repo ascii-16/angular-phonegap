@@ -1,0 +1,91 @@
+.basket {
+  position: relative;
+
+  .header {
+    .notice-board {
+      background: $dark-red;
+      padding: 8px 0;
+      text-align: center;
+    }
+
+    .alert {
+      margin: 0;
+    }
+  }
+
+  .details-wrapper {
+    margin: 24px 0;
+
+    img {
+      width: 100%;
+    }
+
+    .row {
+      margin: 0;
+      padding: 20px 0;
+      border-bottom: 1px solid $light-grey;
+
+      &:first-of-type {
+        padding-top: 0;
+      }
+
+      &:last-of-type {
+        border: 0;
+      }
+    }
+  }
+
+  .amount-wrapper {
+    background: $light-grey;
+    padding: 16px;
+    padding-top: 28px;
+
+    .item {
+      @include flexbox();
+      @include justify-content(space-between);
+      margin-bottom: 6px;
+
+      .value {
+        @extend h5;
+      }
+    }
+
+    .total {
+      font-family: $avenir-black;
+      font-size: 24px !important;
+      font-weight: 900;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1.17;
+      margin-top: 22px;
+    }
+
+    .reminder {
+      color: $dark-grey;
+    }
+
+    .notice {
+      color: $dark-grey;
+      margin-top: 24px;
+      margin-bottom: 16px;
+    }
+  }
+
+  .btn {
+    width: 100% !important;
+  }
+
+  .basket-empty {
+    @extend .b3;
+    color: $kitkat-red;
+    text-align: center;
+    padding-top: 55px;
+    font-weight: 600;
+  }
+  .continue-shopping{
+    display: block;
+    text-align: center;
+    padding: 10px 16px;
+    background: $light-grey;
+  }
+}

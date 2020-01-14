@@ -1,0 +1,94 @@
+.price-summary {
+  background: $light-grey;
+  padding: 16px;
+  padding-top: 24px;
+
+  .item {
+    @include flexbox();
+    justify-content: space-between;
+
+    &:first-of-type {
+      margin-bottom: 8px;
+    }
+
+    .value {
+      @extend h5;
+    }
+
+    h3,
+    h5 {
+      margin: 0;
+    }
+  }
+
+  .total {
+    font-family: $avenir-black;
+    font-size: 24px !important;
+    font-weight: 900;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.17;
+    margin-top: 24px;
+  }
+
+  .reminder {
+    color: $dark-grey;
+  }
+
+  .notice {
+    color: $dark-grey;
+    margin-top: 24px;
+    margin-bottom: 16px;
+  }
+
+  .checkbox-wrapper {
+    margin: 40px 0;
+
+    .checkbox {
+      margin: 0;
+
+      &:first-of-type {
+        margin-bottom: 24px;
+      }
+    }
+  }
+}
+
+.text-summary {
+  border-top: 1px solid $grey;
+  padding-top: 11px;
+
+  .group-header {
+    @include flexbox();
+    justify-content: space-between;
+
+    h6.title {
+      color: $dark-grey;
+      margin: 0;
+      font-weight: normal;
+    }
+
+    .edit-link {
+      margin: 0;
+
+      a {
+        color: $kitkat-red;
+      }
+    }
+  }
+
+  .group-body {
+    margin-top: 16px;
+    margin-bottom: 40px;
+    word-break: break-word;
+
+    .value {
+      margin: 0;
+      margin-bottom: 4px;
+
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+    }
+  }
+}

@@ -1,0 +1,39 @@
+$font-path : 'assets/fonts';
+
+// font alternatives
+//@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:500&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Nunito+Sans:800&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Oleo+Script+Swash+Caps&display=swap');
+
+// fonts
+@media screen {
+    @font-face {
+        font-family: "Avenir-Black";
+        src: url(#{$font-path}/Avenir/AvenirLTStd-Black.eot);
+        src: local('☺'),
+             url(#{$font-path}/Avenir/AvenirLTStd-Black.eot?#iefix) format('embedded-opentype'),
+             url(#{$font-path}/Avenir/AvenirLTStd-Black.woff) format('woff'),
+             url(#{$font-path}/Avenir/AvenirLTStd-Black.ttf) format('truetype'),
+             url(#{$font-path}/Avenir/AvenirLTStd-Black.svg) format('svg');
+    }
+    @font-face {
+        font-family: "Avenir-Roman";
+        src: url(#{$font-path}/Avenir/AvenirLTStd-Roman.eot);
+        src: local('☺'),
+             url(#{$font-path}/Avenir/AvenirLTStd-Roman.eot?#iefix) format('embedded-opentype'),
+             url(#{$font-path}/Avenir/AvenirLTStd-Roman.woff) format('woff'),
+             url(#{$font-path}/Avenir/AvenirLTStd-Roman.ttf) format('truetype'),
+             url(#{$font-path}/Avenir/AvenirLTStd-Roman.svg) format('svg');
+
+    }
+    @font-face {
+        font-family: "Parkside";
+        src: url(#{$font-path}/Parkside/Parkside-Light.eot);
+        src: local('☺'),
+             url(#{$font-path}/Parkside/Parkside-Light.eot?#iefix) format('embedded-opentype'),
+             url(#{$font-path}/Parkside/Parkside-Light.woff) format('woff'),
+             url(#{$font-path}/Parkside/Parkside-Light.ttf) format('truetype'),
+             url(#{$font-path}/Parkside/Parkside-Light.svg) format('svg');
+    }
+}

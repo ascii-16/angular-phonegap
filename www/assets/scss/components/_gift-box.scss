@@ -1,0 +1,127 @@
+.gift-box-home,
+.cyb-home,
+.chocolatory,
+.product {
+  .grid-header {
+    overflow: hidden;
+    position: relative;
+
+    .tall-bottom-outline {
+      position: absolute;
+    }
+
+    @include desktop {
+      background: $kitkat-red;
+      min-height: 540px;
+    }
+
+    .panel-right {
+      position: relative;
+
+      .grid-image-with-shape {
+        background-color: #ffffff;
+        position: relative;
+        height: 100%;
+
+        &::after {
+          content: '';
+          position: absolute;
+          height: 101%;
+          width: 100%;
+          background-image: url('./assets/img/shape-01.svg');
+          background-size: auto 100%;
+          background-position: top left;
+          background-repeat: no-repeat;
+          left: -1px;
+          top: -2px;
+          z-index: -1;
+        }
+
+        @include mobile {
+          @include flexbox();
+          justify-content: center;
+        }
+
+        @include desktop {
+          position: relative;
+          z-index: 2;
+        }
+
+        img {
+          width: 100%;
+        }
+
+        atom-image {
+          position: relative;
+          z-index: 4;
+        }
+      }
+
+      .grid-image,
+      .chocolatory-header {
+        position: relative;
+
+        @include mobile {
+          @include flexbox();
+          justify-content: center;
+        }
+
+        @include desktop {
+          position: relative;
+          z-index: 2;
+        }
+
+        img {
+          width: 100%;
+        }
+      }
+    }
+
+    .finger-wrapper {
+      position: absolute;
+      z-index: 3;
+      width: 350px;
+      overflow: hidden;
+      top: -18%;
+      left: -150px;
+      transform: rotate(-54deg);
+      -webkit-transform: rotate(-54deg);
+
+      .finger-outline {
+        height: 69px;
+        position: relative;
+        margin-bottom: 10px;
+        bottom: 15px;
+
+        &.finger-1 {
+          left: 38%;
+
+        }
+
+        &.finger-3 {
+          left: 27%;
+        }
+      }
+    }
+  }
+
+  .text-bottom {
+    .pentagon-irregular-cyb {
+      position: relative;
+      top: 4em;
+
+      @media (min-width: 525px) {
+        top: 0;
+      }
+    }
+
+    .text {
+      margin-top: 115px;
+    }
+  }
+}
+.product {
+    .grid-header{
+        background: $white;
+    }
+}

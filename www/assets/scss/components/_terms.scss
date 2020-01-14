@@ -1,0 +1,21 @@
+.title {
+  &-red {
+    color: $kitkat-red;
+  }
+
+  &-white {
+    color: $white;
+  }
+}
+
+.terms {
+  padding: 16px 0;
+
+  .title-transparent {
+    color: #2c2d31;
+  }
+
+  img {
+    margin-top: 40px;
+  }
+}

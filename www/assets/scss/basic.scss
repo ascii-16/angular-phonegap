@@ -1,0 +1,268 @@
+html {
+    scroll-behavior: smooth;
+}
+body {
+    width: 100%;
+    margin: 0;
+    overflow-x: hidden;
+}
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+}
+@-moz-document url-prefix() {
+    * {
+        font-weight: 400 !important;
+        //for smooth rendering of font in firefox
+    }
+    html {
+        scroll-behavior: unset !important;
+    }
+}
+a, button {
+    &:focus {
+        outline: none;
+    }
+}
+section, article, aside, footer, header, nav {
+    display: block;
+}
+figure {
+    margin: 0;
+}
+img {
+    max-width: 100%;
+}
+.app-body {
+    min-height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+.main-wrapper {
+    @include desktop {
+        margin-top: 75px !important;
+    }
+}
+[class*='icon'] {
+    cursor: pointer;
+    font-size: 16px !important;
+}
+.required-field-notice {
+    @extend .b3;
+    color: #D2D2D2;
+}
+
+a.prev-icon, a.close-icon {
+    &:hover, &:focus {
+        text-decoration: none !important;
+    }
+}
+.icon-Add, .icon-tick {
+    font-size: 24px !important;
+}
+p.b2 {
+    margin: 0;
+}
+.cdk-overlay-pane {
+    margin-top: 5px;
+}
+.carousel-card {
+    .icon-Add {
+        color: #8F8F8F;
+    }
+}
+input:-internal-autofill-selected {
+    background-color: transparent !important;
+}
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    transition: background-color 5000s ease-in-out 0s;
+}
+
+.form-dark {
+    input:-webkit-autofill,
+    input:-webkit-autofill:hover,
+    input:-webkit-autofill:focus,
+    input:-webkit-autofill:active {
+        -webkit-text-fill-color: #fff !important;
+    }
+}
+.form-light {
+    input:-webkit-autofill,
+    input:-webkit-autofill:hover,
+    input:-webkit-autofill:focus,
+    input:-webkit-autofill:active {
+        -webkit-text-fill-color: #000 !important;
+    }
+}
+.auto-height-vw {
+    @include desktop {
+        min-height: 40vw !important;
+    }
+}
+
+h1,h2,h3 {
+    sup {
+        font-size: 1rem;
+    }
+}
+
+sup {
+    position: relative;
+    top: -0.5em;
+    vertical-align: top;
+}
+
+
+/* Useful common classes */
+
+$fontSizes:( '14', '17', '24', '28', '36');
+
+@each $fontSize in $fontSizes {
+    .fs-#{$fontSize} {
+        font-size: #{$fontSize}px !important;
+    }
+}
+
+$colors:(
+    kitkat-red : #C40018,
+    dark-red: #861723,
+    white: #fff,
+    black: #000,
+    grey: #D2D2D2,
+    light-grey: #F4F4F4,
+    dark-grey: #8F8F8F
+);
+
+@each $name, $color in $colors {
+    .text-#{$name} {
+        color: $color !important;
+    }
+}
+
+.hidden {
+    display: none !important;
+}
+.visible-mobile {
+    @include desktop {
+        display: none !important;
+    }
+}
+.visible-desktop {
+    @include mobile {
+        display: none !important;
+    }
+}
+.bold {
+    font-weight: bold !important;
+}
+.cursor {
+    cursor: pointer !important;
+}
+
+
+/* Scrollbar */
+
+::-webkit-scrollbar {
+	max-width: 8px;
+    background-color: #FFF;
+    cursor: pointer;
+}
+::-webkit-scrollbar-thumb {
+    box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+    border-radius: 5px;
+    background-color: #C40018;
+}
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: #FFF;
+}
+
+/* Animations */
+
+@keyframes smoothScroll {
+	0% {
+		transform: translateY(-40px);
+	}
+	100% {
+		transform: translateY(0px);
+	}
+}
+
+@keyframes slide {
+    0% {
+        right: -50px;
+        opacity: 0;
+    }
+    100% {
+        right: 0;
+        opacity: 1;
+    }
+}
+
+@keyframes slideMobile {
+    0% {
+        right: -10px;
+        opacity: 0;
+    }
+    100% {
+        right: 0;
+        opacity: 1;
+    }
+}
+
+@keyframes opacityAnimation {
+    0% {
+        opacity: 0;
+        display: none;
+    }
+    50% {
+        opacity: 0.5;
+        display: block;
+    }
+    100% {
+        opacity: 1;
+        display: block;
+    }
+}
+
+.allergens{
+    font-weight: bold;
+}
+// .desktopAlign{
+//   .card-carousel{
+//     .carousel{
+//       .content{
+//         position: inherit !important;
+//         transform: inherit !important;
+//       }
+//     }
+//   }
+// }
+
+ngx-spinner{
+    // position: fixed !important;
+    // height: 100% !important;
+    // width: 100% !important;
+    // top: 0 !important;
+    // left: 0 !important;
+    // z-index: 2500 !important;
+    .overlay{
+        position: fixed !important;
+        // background-color: rgba(255, 255, 255, 0) !important;
+        // .la-ball-clip-rotate{
+        //     color: rgb(167, 0, 20) !important;
+        // }
+    }
+}
+.join-the-conversation-iframe{
+    border: none;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}

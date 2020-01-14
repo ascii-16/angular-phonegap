@@ -1,0 +1,286 @@
+.my-account {
+  .header {
+    text-align: center;
+    margin: 20px 24px;
+
+    @include mobile {
+      margin: 20px 10px;
+    }
+
+    .profile-pic {
+      width: 100px;
+      height: 100px;
+      border-radius: 100%;
+      border: 2px solid $kitkat-red;
+      background-clip: padding-box;
+      line-height: 97px;
+      margin: 0 auto;
+      margin-bottom: 10px;
+      text-align: center;
+      @extend h5;
+
+      background: #8F8F8F;
+      color: $kitkat-red;
+      -webkit-text-fill-color: $white;
+      -webkit-text-stroke-width: 1px;
+      -webkit-text-stroke-color: $kitkat-red;
+
+    }
+  }
+
+  .side-bar {
+    background: $light-grey;
+
+    @include desktop {
+      min-height: 500px;
+      padding: 0;
+    }
+
+    .title {
+      @include flexbox();
+      @include justify-content(space-between);
+
+      .logout {
+        font-size: 14px;
+      }
+    }
+
+    .group {
+      padding: 16px;
+      cursor: pointer;
+      margin-left: 10px;
+      font-weight: 500;
+
+      @include mobile {
+        width: 50%;
+        text-align: center;
+        margin: 0;
+      }
+
+      &.active {
+        @include desktop {
+          background: $kitkat-red;
+          color: $white;
+        }
+
+        @include mobile {
+          border-bottom: 4px solid $dark-red;
+        }
+      }
+
+      &:hover {
+        @include desktop {
+          background: $dark-red;
+          color: $white;
+        }
+
+        @include mobile {
+          border-bottom: 4px solid $dark-red;
+        }
+      }
+    }
+
+    .tabs {
+      @include mobile {
+        @include flexbox();
+      }
+    }
+  }
+
+  .content-wrapper {
+    margin-top: 20px;
+  }
+
+  .account-details {
+    @include mobile {
+      margin: 0 5%;
+    }
+
+    >div {
+      // @include flexbox();
+      // @include justify-content(center);
+      padding: 20px 10px;
+    }
+
+    .row, .col-12 {
+      @include mobile {
+        margin: 0;
+        padding: 0;
+      }
+    }
+
+    .edit-profile-wrap {
+      .btn, .close-btn-wrap {
+        margin-bottom: 24px;
+      }
+
+      .close-btn-wrap {
+        > span {
+          color: $kitkat-red;
+        }
+      }
+     
+      &.form-open {
+        padding: 0 10%;
+
+        @include mobile {
+          padding: 0;
+        }
+      }
+    }
+
+    .card {
+      // border-radius: 5px;
+      word-break: break-all;
+      @include flexbox();
+      flex-direction: column;
+      justify-content: center;
+      margin-bottom: 5px;
+      // box-shadow: 0 4px 53px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0), 0 2px 4px -1px rgba(0, 0, 0, 0.2);
+      border: 1px solid rgba(0,0,0, 0.6);
+
+      >div {
+        padding: 20px;
+      }
+
+      .card-title {
+        font-size: 24px;
+        font-weight: 500;
+        border-bottom: 1px solid rgba(0,0,0, 0.6);
+      }
+
+      .card-body {
+        >div {
+          padding: 10px 0;
+        }
+      }
+    }
+
+    .title {
+      font-weight: bold;
+      margin-right: 10px;
+    }
+  }
+
+  .order-details {
+    table {
+      width: 100%;
+
+      thead {
+        tr {
+          th {
+            text-align: left;
+            padding: 16px 0;
+            border-bottom: 1px solid $light-grey;
+            margin-bottom: 16px;
+          }
+        }
+      }
+
+      tbody {
+        td {
+          padding: 16px 0;
+        }
+
+        .details {
+          td {
+            border-bottom: 1px solid $light-grey;
+          }
+
+          .text {
+            padding: 10px 0;
+          }
+
+          .name {
+            font-size: 16px;
+            margin-right: 5px;
+          }
+
+          .ingredients {
+            padding-top: 8px;
+            color: $dark-grey;
+          }
+
+          a.modify-message {
+            display: block;
+            margin-top: 7px;
+          }
+        }
+      }
+    }
+
+    .order-details-wrapper {
+      .order {
+        border-bottom: 1px solid $grey;
+        margin: 0 16px;
+
+        .group {
+          @include flexbox();
+          padding: 10px 0;
+
+          .label {
+            margin-right: 10px;
+            font-weight: 500;
+          }
+        }
+
+        .text {
+          padding: 10px 0;
+          background: $light-grey;
+          display: block !important;
+
+          .name {
+            margin-right: 10px;
+          }
+
+          >div {
+            margin: 5px 0;
+
+            span.title {
+              font-weight: 500;
+              margin-right: 2px;
+
+              &:after {
+                content: ":";
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .approved,
+  .pending,
+  .rejected {
+    padding: 8px 10px;
+    color: $white;
+    font-size: 14px;
+    border-radius: 4px;
+    font-weight: 500;
+    text-transform: capitalize;
+
+    &.sm {
+      font-size: 12px;
+      padding: 5px;
+    }
+  }
+
+  .removeItem {
+    height: inherit !important;
+    margin-left: 10px;
+    width: auto !important;
+  }
+
+  .approved {
+    background: #5cb85c;
+  }
+
+  .pending {
+    background-color: #d58512;
+  }
+
+  .rejected {
+    background: $kitkat-red;
+  }
+}
